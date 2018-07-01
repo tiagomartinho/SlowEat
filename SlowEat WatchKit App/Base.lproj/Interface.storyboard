@@ -24,6 +24,17 @@
             </objects>
             <point key="canvasLocation" x="220" y="345"/>
         </scene>
+        <!--MealSummaryView-->
+        <scene sceneID="7Ux-yb-Wak">
+            <objects>
+                <controller identifier="MealSummaryView" id="Am2-jb-1Oa">
+                    <items>
+                        <label width="136" height="157" alignment="left" text="Meal Tracked!" id="Rou-AR-6EF"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="487" y="345"/>
+        </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
             <objects>

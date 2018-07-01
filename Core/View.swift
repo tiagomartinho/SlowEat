@@ -1,1 +1,3 @@
-protocol View { }
+protocol View {
+    var name: String { get }
+}
