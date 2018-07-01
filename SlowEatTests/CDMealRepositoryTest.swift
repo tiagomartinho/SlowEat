@@ -9,7 +9,7 @@ class CDMealRepositoryTest: XCTestCase {
         let expectation = XCTestExpectation(description: "")
 
         repository = CDMealRepository {
-            self.repository.delete()
+            self.repository.deleteAll()
             let meal = Meal(startTime: 123)
 
             self.repository.save(meal)

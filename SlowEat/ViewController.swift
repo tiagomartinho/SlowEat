@@ -14,7 +14,8 @@ class ViewController: UIViewController {
         repository = CDMealRepository { [weak self] in
             guard let vc = self, let repository = vc.repository else { return }
             vc.presenter = MealPresenter(timeProvider: FoundationTimeProvider(),
-                                            repository: repository)
+                                            repository: repository,
+                                            router: UIKitRouter())
         }
     }
 }

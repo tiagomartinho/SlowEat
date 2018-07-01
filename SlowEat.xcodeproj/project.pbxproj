@@ -13,7 +13,6 @@
 		2424FB9120E9188000EE61D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2424FB9020E9188000EE61D9 /* Assets.xcassets */; };
 		2424FB9420E9188000EE61D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2424FB9220E9188000EE61D9 /* LaunchScreen.storyboard */; };
 		2424FB9F20E9188000EE61D9 /* MealPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2424FB9E20E9188000EE61D9 /* MealPresenterTest.swift */; };
-		2424FBAA20E9188000EE61D9 /* SlowEatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2424FBA920E9188000EE61D9 /* SlowEatUITests.swift */; };
 		2424FBAF20E9188000EE61D9 /* SlowEat WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 2424FBAE20E9188000EE61D9 /* SlowEat WatchKit App.app */; };
 		2424FBB520E9188000EE61D9 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2424FBB320E9188000EE61D9 /* Interface.storyboard */; };
 		2424FBB720E9188000EE61D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2424FBB620E9188000EE61D9 /* Assets.xcassets */; };
@@ -38,17 +37,18 @@
 		2424FC0120E933C100EE61D9 /* CDMealRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2424FC0020E933C100EE61D9 /* CDMealRepository.swift */; };
 		2424FC0220E933C100EE61D9 /* CDMealRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2424FC0020E933C100EE61D9 /* CDMealRepository.swift */; };
 		2424FC0420E93A4F00EE61D9 /* CDMealRepositoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2424FC0320E93A4F00EE61D9 /* CDMealRepositoryTest.swift */; };
+		2424FC0920E9410D00EE61D9 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2424FC0720E9410700EE61D9 /* Router.swift */; };
+		2424FC0A20E9410E00EE61D9 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2424FC0720E9410700EE61D9 /* Router.swift */; };
+		2424FC0C20E9415500EE61D9 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2424FC0B20E9415500EE61D9 /* View.swift */; };
+		2424FC0D20E9415500EE61D9 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2424FC0B20E9415500EE61D9 /* View.swift */; };
+		2424FC0F20E941E000EE61D9 /* WKRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2424FC0E20E941E000EE61D9 /* WKRouter.swift */; };
+		2424FC1120E9421D00EE61D9 /* UIKitRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2424FC1020E9421D00EE61D9 /* UIKitRouter.swift */; };
+		2424FC1320E9427100EE61D9 /* MealSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2424FC1220E9427100EE61D9 /* MealSummaryView.swift */; };
+		2424FC1420E9427100EE61D9 /* MealSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2424FC1220E9427100EE61D9 /* MealSummaryView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		2424FB9B20E9188000EE61D9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2424FB7E20E9187E00EE61D9 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 2424FB8520E9187F00EE61D9;
-			remoteInfo = SlowEat;
-		};
-		2424FBA620E9188000EE61D9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2424FB7E20E9187E00EE61D9 /* Project object */;
 			proxyType = 1;
@@ -107,9 +107,6 @@
 		2424FB9A20E9188000EE61D9 /* SlowEatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SlowEatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2424FB9E20E9188000EE61D9 /* MealPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealPresenterTest.swift; sourceTree = "<group>"; };
 		2424FBA020E9188000EE61D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2424FBA520E9188000EE61D9 /* SlowEatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SlowEatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2424FBA920E9188000EE61D9 /* SlowEatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlowEatUITests.swift; sourceTree = "<group>"; };
-		2424FBAB20E9188000EE61D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2424FBAE20E9188000EE61D9 /* SlowEat WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SlowEat WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2424FBB420E9188000EE61D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		2424FBB620E9188000EE61D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -130,6 +127,11 @@
 		2424FBFD20E9333600EE61D9 /* MealModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MealModel.xcdatamodel; sourceTree = "<group>"; };
 		2424FC0020E933C100EE61D9 /* CDMealRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDMealRepository.swift; sourceTree = "<group>"; };
 		2424FC0320E93A4F00EE61D9 /* CDMealRepositoryTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDMealRepositoryTest.swift; sourceTree = "<group>"; };
+		2424FC0720E9410700EE61D9 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		2424FC0B20E9415500EE61D9 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		2424FC0E20E941E000EE61D9 /* WKRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WKRouter.swift; sourceTree = "<group>"; };
+		2424FC1020E9421D00EE61D9 /* UIKitRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitRouter.swift; sourceTree = "<group>"; };
+		2424FC1220E9427100EE61D9 /* MealSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealSummaryView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,13 +143,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		2424FB9720E9188000EE61D9 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2424FBA220E9188000EE61D9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -170,7 +165,6 @@
 				2424FBE120E9194700EE61D9 /* Core */,
 				2424FB8820E9187F00EE61D9 /* SlowEat */,
 				2424FB9D20E9188000EE61D9 /* SlowEatTests */,
-				2424FBA820E9188000EE61D9 /* SlowEatUITests */,
 				2424FBB220E9188000EE61D9 /* SlowEat WatchKit App */,
 				2424FBC120E9188000EE61D9 /* SlowEat WatchKit Extension */,
 				2424FB8720E9187F00EE61D9 /* Products */,
@@ -182,7 +176,6 @@
 			children = (
 				2424FB8620E9187F00EE61D9 /* SlowEat.app */,
 				2424FB9A20E9188000EE61D9 /* SlowEatTests.xctest */,
-				2424FBA520E9188000EE61D9 /* SlowEatUITests.xctest */,
 				2424FBAE20E9188000EE61D9 /* SlowEat WatchKit App.app */,
 				2424FBBD20E9188000EE61D9 /* SlowEat WatchKit Extension.appex */,
 			);
@@ -193,6 +186,7 @@
 			isa = PBXGroup;
 			children = (
 				2424FB8920E9187F00EE61D9 /* AppDelegate.swift */,
+				2424FC1020E9421D00EE61D9 /* UIKitRouter.swift */,
 				2424FB8B20E9187F00EE61D9 /* ViewController.swift */,
 				2424FB8D20E9187F00EE61D9 /* Main.storyboard */,
 				2424FB9020E9188000EE61D9 /* Assets.xcassets */,
@@ -212,15 +206,6 @@
 			path = SlowEatTests;
 			sourceTree = "<group>";
 		};
-		2424FBA820E9188000EE61D9 /* SlowEatUITests */ = {
-			isa = PBXGroup;
-			children = (
-				2424FBA920E9188000EE61D9 /* SlowEatUITests.swift */,
-				2424FBAB20E9188000EE61D9 /* Info.plist */,
-			);
-			path = SlowEatUITests;
-			sourceTree = "<group>";
-		};
 		2424FBB220E9188000EE61D9 /* SlowEat WatchKit App */ = {
 			isa = PBXGroup;
 			children = (
@@ -234,6 +219,7 @@
 		2424FBC120E9188000EE61D9 /* SlowEat WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				2424FC0E20E941E000EE61D9 /* WKRouter.swift */,
 				2424FBC220E9188000EE61D9 /* InterfaceController.swift */,
 				2424FBC420E9188000EE61D9 /* ExtensionDelegate.swift */,
 				2424FBC620E9188000EE61D9 /* NotificationController.swift */,
@@ -248,6 +234,9 @@
 		2424FBE120E9194700EE61D9 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				2424FC1220E9427100EE61D9 /* MealSummaryView.swift */,
+				2424FC0B20E9415500EE61D9 /* View.swift */,
+				2424FC0720E9410700EE61D9 /* Router.swift */,
 				2424FBE220E919DC00EE61D9 /* MealPresenter.swift */,
 				2424FBE820E91A4100EE61D9 /* Meal.swift */,
 				2424FC0620E93F1500EE61D9 /* Time Provider */,
@@ -315,24 +304,6 @@
 			productReference = 2424FB9A20E9188000EE61D9 /* SlowEatTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		2424FBA420E9188000EE61D9 /* SlowEatUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 2424FBDE20E9188100EE61D9 /* Build configuration list for PBXNativeTarget "SlowEatUITests" */;
-			buildPhases = (
-				2424FBA120E9188000EE61D9 /* Sources */,
-				2424FBA220E9188000EE61D9 /* Frameworks */,
-				2424FBA320E9188000EE61D9 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				2424FBA720E9188000EE61D9 /* PBXTargetDependency */,
-			);
-			name = SlowEatUITests;
-			productName = SlowEatUITests;
-			productReference = 2424FBA520E9188000EE61D9 /* SlowEatUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 		2424FBAD20E9188000EE61D9 /* SlowEat WatchKit App */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2424FBD420E9188100EE61D9 /* Build configuration list for PBXNativeTarget "SlowEat WatchKit App" */;
@@ -384,10 +355,6 @@
 						CreatedOnToolsVersion = 9.4.1;
 						TestTargetID = 2424FB8520E9187F00EE61D9;
 					};
-					2424FBA420E9188000EE61D9 = {
-						CreatedOnToolsVersion = 9.4.1;
-						TestTargetID = 2424FB8520E9187F00EE61D9;
-					};
 					2424FBAD20E9188000EE61D9 = {
 						CreatedOnToolsVersion = 9.4.1;
 					};
@@ -411,7 +378,6 @@
 			targets = (
 				2424FB8520E9187F00EE61D9 /* SlowEat */,
 				2424FB9920E9188000EE61D9 /* SlowEatTests */,
-				2424FBA420E9188000EE61D9 /* SlowEatUITests */,
 				2424FBAD20E9188000EE61D9 /* SlowEat WatchKit App */,
 				2424FBBC20E9188000EE61D9 /* SlowEat WatchKit Extension */,
 			);
@@ -430,13 +396,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		2424FB9820E9188000EE61D9 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2424FBA320E9188000EE61D9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -469,12 +428,16 @@
 			files = (
 				2424FBE920E91A4100EE61D9 /* Meal.swift in Sources */,
 				2424FB8C20E9187F00EE61D9 /* ViewController.swift in Sources */,
+				2424FC0A20E9410E00EE61D9 /* Router.swift in Sources */,
+				2424FC1320E9427100EE61D9 /* MealSummaryView.swift in Sources */,
+				2424FC1120E9421D00EE61D9 /* UIKitRouter.swift in Sources */,
 				2424FC0120E933C100EE61D9 /* CDMealRepository.swift in Sources */,
 				2424FB8A20E9187F00EE61D9 /* AppDelegate.swift in Sources */,
 				2424FBE620E91A2000EE61D9 /* MealRepository.swift in Sources */,
 				2424FBF220E92DF000EE61D9 /* FoundationTimeProvider.swift in Sources */,
 				2424FBF020E92D9E00EE61D9 /* TimeProvider.swift in Sources */,
 				2424FBFE20E9333600EE61D9 /* MealModel.xcdatamodeld in Sources */,
+				2424FC0C20E9415500EE61D9 /* View.swift in Sources */,
 				2424FBE320E919DC00EE61D9 /* MealPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -488,25 +451,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2424FBA120E9188000EE61D9 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2424FBAA20E9188000EE61D9 /* SlowEatUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		2424FBB920E9188000EE61D9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2424FC0D20E9415500EE61D9 /* View.swift in Sources */,
 				2424FBC720E9188000EE61D9 /* NotificationController.swift in Sources */,
 				2424FBC920E9188000EE61D9 /* ComplicationController.swift in Sources */,
 				2424FBEA20E91A4100EE61D9 /* Meal.swift in Sources */,
 				2424FC0220E933C100EE61D9 /* CDMealRepository.swift in Sources */,
+				2424FC0920E9410D00EE61D9 /* Router.swift in Sources */,
+				2424FC1420E9427100EE61D9 /* MealSummaryView.swift in Sources */,
 				2424FBC520E9188000EE61D9 /* ExtensionDelegate.swift in Sources */,
 				2424FBE420E919DC00EE61D9 /* MealPresenter.swift in Sources */,
 				2424FBE720E91A2000EE61D9 /* MealRepository.swift in Sources */,
+				2424FC0F20E941E000EE61D9 /* WKRouter.swift in Sources */,
 				2424FBFF20E9333600EE61D9 /* MealModel.xcdatamodeld in Sources */,
 				2424FBC320E9188000EE61D9 /* InterfaceController.swift in Sources */,
 				2424FBF420E92E6A00EE61D9 /* FoundationTimeProvider.swift in Sources */,
@@ -521,11 +480,6 @@
 			isa = PBXTargetDependency;
 			target = 2424FB8520E9187F00EE61D9 /* SlowEat */;
 			targetProxy = 2424FB9B20E9188000EE61D9 /* PBXContainerItemProxy */;
-		};
-		2424FBA720E9188000EE61D9 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 2424FB8520E9187F00EE61D9 /* SlowEat */;
-			targetProxy = 2424FBA620E9188000EE61D9 /* PBXContainerItemProxy */;
 		};
 		2424FBB120E9188000EE61D9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -841,46 +795,6 @@
 			};
 			name = Release;
 		};
-		2424FBDF20E9188100EE61D9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4C34FT6ABU;
-				INFOPLIST_FILE = SlowEatUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.tm.SlowEatUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = SlowEat;
-			};
-			name = Debug;
-		};
-		2424FBE020E9188100EE61D9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4C34FT6ABU;
-				INFOPLIST_FILE = SlowEatUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.tm.SlowEatUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = SlowEat;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -925,15 +839,6 @@
 			buildConfigurations = (
 				2424FBDC20E9188100EE61D9 /* Debug */,
 				2424FBDD20E9188100EE61D9 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		2424FBDE20E9188100EE61D9 /* Build configuration list for PBXNativeTarget "SlowEatUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2424FBDF20E9188100EE61D9 /* Debug */,
-				2424FBE020E9188100EE61D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
