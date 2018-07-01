@@ -33,6 +33,10 @@
 		2424FBF220E92DF000EE61D9 /* FoundationTimeProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2424FBF120E92DF000EE61D9 /* FoundationTimeProvider.swift */; };
 		2424FBF320E92E6A00EE61D9 /* TimeProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2424FBEF20E92D9E00EE61D9 /* TimeProvider.swift */; };
 		2424FBF420E92E6A00EE61D9 /* FoundationTimeProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2424FBF120E92DF000EE61D9 /* FoundationTimeProvider.swift */; };
+		2424FBFE20E9333600EE61D9 /* MealModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2424FBFC20E9333600EE61D9 /* MealModel.xcdatamodeld */; };
+		2424FBFF20E9333600EE61D9 /* MealModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2424FBFC20E9333600EE61D9 /* MealModel.xcdatamodeld */; };
+		2424FC0120E933C100EE61D9 /* CDMealRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2424FC0020E933C100EE61D9 /* CDMealRepository.swift */; };
+		2424FC0220E933C100EE61D9 /* CDMealRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2424FC0020E933C100EE61D9 /* CDMealRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -122,6 +126,8 @@
 		2424FBE820E91A4100EE61D9 /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
 		2424FBEF20E92D9E00EE61D9 /* TimeProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeProvider.swift; sourceTree = "<group>"; };
 		2424FBF120E92DF000EE61D9 /* FoundationTimeProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoundationTimeProvider.swift; sourceTree = "<group>"; };
+		2424FBFD20E9333600EE61D9 /* MealModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MealModel.xcdatamodel; sourceTree = "<group>"; };
+		2424FC0020E933C100EE61D9 /* CDMealRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDMealRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -244,6 +250,8 @@
 				2424FBE820E91A4100EE61D9 /* Meal.swift */,
 				2424FBEF20E92D9E00EE61D9 /* TimeProvider.swift */,
 				2424FBF120E92DF000EE61D9 /* FoundationTimeProvider.swift */,
+				2424FBFC20E9333600EE61D9 /* MealModel.xcdatamodeld */,
+				2424FC0020E933C100EE61D9 /* CDMealRepository.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -442,10 +450,12 @@
 			files = (
 				2424FBE920E91A4100EE61D9 /* Meal.swift in Sources */,
 				2424FB8C20E9187F00EE61D9 /* ViewController.swift in Sources */,
+				2424FC0120E933C100EE61D9 /* CDMealRepository.swift in Sources */,
 				2424FB8A20E9187F00EE61D9 /* AppDelegate.swift in Sources */,
 				2424FBE620E91A2000EE61D9 /* MealRepository.swift in Sources */,
 				2424FBF220E92DF000EE61D9 /* FoundationTimeProvider.swift in Sources */,
 				2424FBF020E92D9E00EE61D9 /* TimeProvider.swift in Sources */,
+				2424FBFE20E9333600EE61D9 /* MealModel.xcdatamodeld in Sources */,
 				2424FBE320E919DC00EE61D9 /* MealPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -473,9 +483,11 @@
 				2424FBC720E9188000EE61D9 /* NotificationController.swift in Sources */,
 				2424FBC920E9188000EE61D9 /* ComplicationController.swift in Sources */,
 				2424FBEA20E91A4100EE61D9 /* Meal.swift in Sources */,
+				2424FC0220E933C100EE61D9 /* CDMealRepository.swift in Sources */,
 				2424FBC520E9188000EE61D9 /* ExtensionDelegate.swift in Sources */,
 				2424FBE420E919DC00EE61D9 /* MealPresenter.swift in Sources */,
 				2424FBE720E91A2000EE61D9 /* MealRepository.swift in Sources */,
+				2424FBFF20E9333600EE61D9 /* MealModel.xcdatamodeld in Sources */,
 				2424FBC320E9188000EE61D9 /* InterfaceController.swift in Sources */,
 				2424FBF420E92E6A00EE61D9 /* FoundationTimeProvider.swift in Sources */,
 				2424FBF320E92E6A00EE61D9 /* TimeProvider.swift in Sources */,
@@ -907,6 +919,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2424FBFC20E9333600EE61D9 /* MealModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2424FBFD20E9333600EE61D9 /* MealModel.xcdatamodel */,
+			);
+			currentVersion = 2424FBFD20E9333600EE61D9 /* MealModel.xcdatamodel */;
+			path = MealModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 2424FB7E20E9187E00EE61D9 /* Project object */;
 }
