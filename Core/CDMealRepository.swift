@@ -40,11 +40,19 @@ class CDMealRepository: MealRepository {
         }
     }
 
+    func deleteAll() {
+        fecthMO().forEach { managedObjectContext.delete($0) }
+    }
+
     func fecth() -> [Meal] {
+        return fecthMO().compactMap { $0.startTime?.timeIntervalSince1970 }.compactMap { Meal(startTime: $0) }
+    }
+
+    private func fecthMO() -> [MealMO] {
         let fetch = NSFetchRequest<NSFetchRequestResult>(entityName: "Meal")
         do {
             guard let meals = try managedObjectContext.fetch(fetch) as? [MealMO] else { return [] }
-            return meals.compactMap { $0.startTime?.timeIntervalSince1970 }.compactMap { Meal(startTime: $0) }
+            return meals
         } catch {
             fatalError("Failed to fetch: \(error)")
         }

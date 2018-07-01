@@ -9,14 +9,14 @@ class CDMealRepositoryTest: XCTestCase {
         let expectation = XCTestExpectation(description: "")
 
         repository = CDMealRepository {
+            self.repository.delete()
             let meal = Meal(startTime: 123)
-            let numberOfMeals = self.repository.fecth().count
 
             self.repository.save(meal)
 
             let meals = self.repository.fecth()
             XCTAssert(meals.contains(meal))
-            XCTAssertEqual(numberOfMeals + 1, meals.count)
+            XCTAssertEqual(1, meals.count)
             expectation.fulfill()
         }
 
