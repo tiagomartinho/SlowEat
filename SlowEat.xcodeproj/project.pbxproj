@@ -1,0 +1,874 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2424FB8A20E9187F00EE61D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2424FB8920E9187F00EE61D9 /* AppDelegate.swift */; };
+		2424FB8C20E9187F00EE61D9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2424FB8B20E9187F00EE61D9 /* ViewController.swift */; };
+		2424FB8F20E9187F00EE61D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2424FB8D20E9187F00EE61D9 /* Main.storyboard */; };
+		2424FB9120E9188000EE61D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2424FB9020E9188000EE61D9 /* Assets.xcassets */; };
+		2424FB9420E9188000EE61D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2424FB9220E9188000EE61D9 /* LaunchScreen.storyboard */; };
+		2424FB9F20E9188000EE61D9 /* SlowEatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2424FB9E20E9188000EE61D9 /* SlowEatTests.swift */; };
+		2424FBAA20E9188000EE61D9 /* SlowEatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2424FBA920E9188000EE61D9 /* SlowEatUITests.swift */; };
+		2424FBAF20E9188000EE61D9 /* SlowEat WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 2424FBAE20E9188000EE61D9 /* SlowEat WatchKit App.app */; };
+		2424FBB520E9188000EE61D9 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2424FBB320E9188000EE61D9 /* Interface.storyboard */; };
+		2424FBB720E9188000EE61D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2424FBB620E9188000EE61D9 /* Assets.xcassets */; };
+		2424FBBE20E9188000EE61D9 /* SlowEat WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2424FBBD20E9188000EE61D9 /* SlowEat WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2424FBC320E9188000EE61D9 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2424FBC220E9188000EE61D9 /* InterfaceController.swift */; };
+		2424FBC520E9188000EE61D9 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2424FBC420E9188000EE61D9 /* ExtensionDelegate.swift */; };
+		2424FBC720E9188000EE61D9 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2424FBC620E9188000EE61D9 /* NotificationController.swift */; };
+		2424FBC920E9188000EE61D9 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2424FBC820E9188000EE61D9 /* ComplicationController.swift */; };
+		2424FBCB20E9188100EE61D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2424FBCA20E9188100EE61D9 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2424FB9B20E9188000EE61D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2424FB7E20E9187E00EE61D9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2424FB8520E9187F00EE61D9;
+			remoteInfo = SlowEat;
+		};
+		2424FBA620E9188000EE61D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2424FB7E20E9187E00EE61D9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2424FB8520E9187F00EE61D9;
+			remoteInfo = SlowEat;
+		};
+		2424FBB020E9188000EE61D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2424FB7E20E9187E00EE61D9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2424FBAD20E9188000EE61D9;
+			remoteInfo = "SlowEat WatchKit App";
+		};
+		2424FBBF20E9188000EE61D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2424FB7E20E9187E00EE61D9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2424FBBC20E9188000EE61D9;
+			remoteInfo = "SlowEat WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2424FBD320E9188100EE61D9 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				2424FBBE20E9188000EE61D9 /* SlowEat WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2424FBD720E9188100EE61D9 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				2424FBAF20E9188000EE61D9 /* SlowEat WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2424FB8620E9187F00EE61D9 /* SlowEat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlowEat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2424FB8920E9187F00EE61D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2424FB8B20E9187F00EE61D9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2424FB8E20E9187F00EE61D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2424FB9020E9188000EE61D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2424FB9320E9188000EE61D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2424FB9520E9188000EE61D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2424FB9A20E9188000EE61D9 /* SlowEatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SlowEatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2424FB9E20E9188000EE61D9 /* SlowEatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlowEatTests.swift; sourceTree = "<group>"; };
+		2424FBA020E9188000EE61D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2424FBA520E9188000EE61D9 /* SlowEatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SlowEatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2424FBA920E9188000EE61D9 /* SlowEatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlowEatUITests.swift; sourceTree = "<group>"; };
+		2424FBAB20E9188000EE61D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2424FBAE20E9188000EE61D9 /* SlowEat WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SlowEat WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2424FBB420E9188000EE61D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		2424FBB620E9188000EE61D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2424FBB820E9188000EE61D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2424FBBD20E9188000EE61D9 /* SlowEat WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "SlowEat WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2424FBC220E9188000EE61D9 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		2424FBC420E9188000EE61D9 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		2424FBC620E9188000EE61D9 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		2424FBC820E9188000EE61D9 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		2424FBCA20E9188100EE61D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2424FBCC20E9188100EE61D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2424FBCD20E9188100EE61D9 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2424FB8320E9187F00EE61D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2424FB9720E9188000EE61D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2424FBA220E9188000EE61D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2424FBBA20E9188000EE61D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2424FB7D20E9187E00EE61D9 = {
+			isa = PBXGroup;
+			children = (
+				2424FB8820E9187F00EE61D9 /* SlowEat */,
+				2424FB9D20E9188000EE61D9 /* SlowEatTests */,
+				2424FBA820E9188000EE61D9 /* SlowEatUITests */,
+				2424FBB220E9188000EE61D9 /* SlowEat WatchKit App */,
+				2424FBC120E9188000EE61D9 /* SlowEat WatchKit Extension */,
+				2424FB8720E9187F00EE61D9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2424FB8720E9187F00EE61D9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2424FB8620E9187F00EE61D9 /* SlowEat.app */,
+				2424FB9A20E9188000EE61D9 /* SlowEatTests.xctest */,
+				2424FBA520E9188000EE61D9 /* SlowEatUITests.xctest */,
+				2424FBAE20E9188000EE61D9 /* SlowEat WatchKit App.app */,
+				2424FBBD20E9188000EE61D9 /* SlowEat WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2424FB8820E9187F00EE61D9 /* SlowEat */ = {
+			isa = PBXGroup;
+			children = (
+				2424FB8920E9187F00EE61D9 /* AppDelegate.swift */,
+				2424FB8B20E9187F00EE61D9 /* ViewController.swift */,
+				2424FB8D20E9187F00EE61D9 /* Main.storyboard */,
+				2424FB9020E9188000EE61D9 /* Assets.xcassets */,
+				2424FB9220E9188000EE61D9 /* LaunchScreen.storyboard */,
+				2424FB9520E9188000EE61D9 /* Info.plist */,
+			);
+			path = SlowEat;
+			sourceTree = "<group>";
+		};
+		2424FB9D20E9188000EE61D9 /* SlowEatTests */ = {
+			isa = PBXGroup;
+			children = (
+				2424FB9E20E9188000EE61D9 /* SlowEatTests.swift */,
+				2424FBA020E9188000EE61D9 /* Info.plist */,
+			);
+			path = SlowEatTests;
+			sourceTree = "<group>";
+		};
+		2424FBA820E9188000EE61D9 /* SlowEatUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2424FBA920E9188000EE61D9 /* SlowEatUITests.swift */,
+				2424FBAB20E9188000EE61D9 /* Info.plist */,
+			);
+			path = SlowEatUITests;
+			sourceTree = "<group>";
+		};
+		2424FBB220E9188000EE61D9 /* SlowEat WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				2424FBB320E9188000EE61D9 /* Interface.storyboard */,
+				2424FBB620E9188000EE61D9 /* Assets.xcassets */,
+				2424FBB820E9188000EE61D9 /* Info.plist */,
+			);
+			path = "SlowEat WatchKit App";
+			sourceTree = "<group>";
+		};
+		2424FBC120E9188000EE61D9 /* SlowEat WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				2424FBC220E9188000EE61D9 /* InterfaceController.swift */,
+				2424FBC420E9188000EE61D9 /* ExtensionDelegate.swift */,
+				2424FBC620E9188000EE61D9 /* NotificationController.swift */,
+				2424FBC820E9188000EE61D9 /* ComplicationController.swift */,
+				2424FBCA20E9188100EE61D9 /* Assets.xcassets */,
+				2424FBCC20E9188100EE61D9 /* Info.plist */,
+				2424FBCD20E9188100EE61D9 /* PushNotificationPayload.apns */,
+			);
+			path = "SlowEat WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2424FB8520E9187F00EE61D9 /* SlowEat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2424FBD820E9188100EE61D9 /* Build configuration list for PBXNativeTarget "SlowEat" */;
+			buildPhases = (
+				2424FB8220E9187F00EE61D9 /* Sources */,
+				2424FB8320E9187F00EE61D9 /* Frameworks */,
+				2424FB8420E9187F00EE61D9 /* Resources */,
+				2424FBD720E9188100EE61D9 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2424FBB120E9188000EE61D9 /* PBXTargetDependency */,
+			);
+			name = SlowEat;
+			productName = SlowEat;
+			productReference = 2424FB8620E9187F00EE61D9 /* SlowEat.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2424FB9920E9188000EE61D9 /* SlowEatTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2424FBDB20E9188100EE61D9 /* Build configuration list for PBXNativeTarget "SlowEatTests" */;
+			buildPhases = (
+				2424FB9620E9188000EE61D9 /* Sources */,
+				2424FB9720E9188000EE61D9 /* Frameworks */,
+				2424FB9820E9188000EE61D9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2424FB9C20E9188000EE61D9 /* PBXTargetDependency */,
+			);
+			name = SlowEatTests;
+			productName = SlowEatTests;
+			productReference = 2424FB9A20E9188000EE61D9 /* SlowEatTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2424FBA420E9188000EE61D9 /* SlowEatUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2424FBDE20E9188100EE61D9 /* Build configuration list for PBXNativeTarget "SlowEatUITests" */;
+			buildPhases = (
+				2424FBA120E9188000EE61D9 /* Sources */,
+				2424FBA220E9188000EE61D9 /* Frameworks */,
+				2424FBA320E9188000EE61D9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2424FBA720E9188000EE61D9 /* PBXTargetDependency */,
+			);
+			name = SlowEatUITests;
+			productName = SlowEatUITests;
+			productReference = 2424FBA520E9188000EE61D9 /* SlowEatUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		2424FBAD20E9188000EE61D9 /* SlowEat WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2424FBD420E9188100EE61D9 /* Build configuration list for PBXNativeTarget "SlowEat WatchKit App" */;
+			buildPhases = (
+				2424FBAC20E9188000EE61D9 /* Resources */,
+				2424FBD320E9188100EE61D9 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2424FBC020E9188000EE61D9 /* PBXTargetDependency */,
+			);
+			name = "SlowEat WatchKit App";
+			productName = "SlowEat WatchKit App";
+			productReference = 2424FBAE20E9188000EE61D9 /* SlowEat WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		2424FBBC20E9188000EE61D9 /* SlowEat WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2424FBD020E9188100EE61D9 /* Build configuration list for PBXNativeTarget "SlowEat WatchKit Extension" */;
+			buildPhases = (
+				2424FBB920E9188000EE61D9 /* Sources */,
+				2424FBBA20E9188000EE61D9 /* Frameworks */,
+				2424FBBB20E9188000EE61D9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SlowEat WatchKit Extension";
+			productName = "SlowEat WatchKit Extension";
+			productReference = 2424FBBD20E9188000EE61D9 /* SlowEat WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2424FB7E20E9187E00EE61D9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = tm;
+				TargetAttributes = {
+					2424FB8520E9187F00EE61D9 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					2424FB9920E9188000EE61D9 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 2424FB8520E9187F00EE61D9;
+					};
+					2424FBA420E9188000EE61D9 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 2424FB8520E9187F00EE61D9;
+					};
+					2424FBAD20E9188000EE61D9 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					2424FBBC20E9188000EE61D9 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 2424FB8120E9187E00EE61D9 /* Build configuration list for PBXProject "SlowEat" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2424FB7D20E9187E00EE61D9;
+			productRefGroup = 2424FB8720E9187F00EE61D9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2424FB8520E9187F00EE61D9 /* SlowEat */,
+				2424FB9920E9188000EE61D9 /* SlowEatTests */,
+				2424FBA420E9188000EE61D9 /* SlowEatUITests */,
+				2424FBAD20E9188000EE61D9 /* SlowEat WatchKit App */,
+				2424FBBC20E9188000EE61D9 /* SlowEat WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2424FB8420E9187F00EE61D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2424FB9420E9188000EE61D9 /* LaunchScreen.storyboard in Resources */,
+				2424FB9120E9188000EE61D9 /* Assets.xcassets in Resources */,
+				2424FB8F20E9187F00EE61D9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2424FB9820E9188000EE61D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2424FBA320E9188000EE61D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2424FBAC20E9188000EE61D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2424FBB720E9188000EE61D9 /* Assets.xcassets in Resources */,
+				2424FBB520E9188000EE61D9 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2424FBBB20E9188000EE61D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2424FBCB20E9188100EE61D9 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2424FB8220E9187F00EE61D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2424FB8C20E9187F00EE61D9 /* ViewController.swift in Sources */,
+				2424FB8A20E9187F00EE61D9 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2424FB9620E9188000EE61D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2424FB9F20E9188000EE61D9 /* SlowEatTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2424FBA120E9188000EE61D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2424FBAA20E9188000EE61D9 /* SlowEatUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2424FBB920E9188000EE61D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2424FBC720E9188000EE61D9 /* NotificationController.swift in Sources */,
+				2424FBC920E9188000EE61D9 /* ComplicationController.swift in Sources */,
+				2424FBC520E9188000EE61D9 /* ExtensionDelegate.swift in Sources */,
+				2424FBC320E9188000EE61D9 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2424FB9C20E9188000EE61D9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2424FB8520E9187F00EE61D9 /* SlowEat */;
+			targetProxy = 2424FB9B20E9188000EE61D9 /* PBXContainerItemProxy */;
+		};
+		2424FBA720E9188000EE61D9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2424FB8520E9187F00EE61D9 /* SlowEat */;
+			targetProxy = 2424FBA620E9188000EE61D9 /* PBXContainerItemProxy */;
+		};
+		2424FBB120E9188000EE61D9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2424FBAD20E9188000EE61D9 /* SlowEat WatchKit App */;
+			targetProxy = 2424FBB020E9188000EE61D9 /* PBXContainerItemProxy */;
+		};
+		2424FBC020E9188000EE61D9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2424FBBC20E9188000EE61D9 /* SlowEat WatchKit Extension */;
+			targetProxy = 2424FBBF20E9188000EE61D9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2424FB8D20E9187F00EE61D9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2424FB8E20E9187F00EE61D9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2424FB9220E9188000EE61D9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2424FB9320E9188000EE61D9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		2424FBB320E9188000EE61D9 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2424FBB420E9188000EE61D9 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2424FBCE20E9188100EE61D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2424FBCF20E9188100EE61D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2424FBD120E9188100EE61D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4C34FT6ABU;
+				INFOPLIST_FILE = "SlowEat WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tm.SlowEat.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Debug;
+		};
+		2424FBD220E9188100EE61D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4C34FT6ABU;
+				INFOPLIST_FILE = "SlowEat WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tm.SlowEat.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Release;
+		};
+		2424FBD520E9188100EE61D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4C34FT6ABU;
+				IBSC_MODULE = SlowEat_WatchKit_Extension;
+				INFOPLIST_FILE = "SlowEat WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tm.SlowEat.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Debug;
+		};
+		2424FBD620E9188100EE61D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4C34FT6ABU;
+				IBSC_MODULE = SlowEat_WatchKit_Extension;
+				INFOPLIST_FILE = "SlowEat WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tm.SlowEat.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Release;
+		};
+		2424FBD920E9188100EE61D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4C34FT6ABU;
+				INFOPLIST_FILE = SlowEat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tm.SlowEat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2424FBDA20E9188100EE61D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4C34FT6ABU;
+				INFOPLIST_FILE = SlowEat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tm.SlowEat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2424FBDC20E9188100EE61D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4C34FT6ABU;
+				INFOPLIST_FILE = SlowEatTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tm.SlowEatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SlowEat.app/SlowEat";
+			};
+			name = Debug;
+		};
+		2424FBDD20E9188100EE61D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4C34FT6ABU;
+				INFOPLIST_FILE = SlowEatTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tm.SlowEatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SlowEat.app/SlowEat";
+			};
+			name = Release;
+		};
+		2424FBDF20E9188100EE61D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4C34FT6ABU;
+				INFOPLIST_FILE = SlowEatUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tm.SlowEatUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SlowEat;
+			};
+			name = Debug;
+		};
+		2424FBE020E9188100EE61D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4C34FT6ABU;
+				INFOPLIST_FILE = SlowEatUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tm.SlowEatUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SlowEat;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2424FB8120E9187E00EE61D9 /* Build configuration list for PBXProject "SlowEat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2424FBCE20E9188100EE61D9 /* Debug */,
+				2424FBCF20E9188100EE61D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2424FBD020E9188100EE61D9 /* Build configuration list for PBXNativeTarget "SlowEat WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2424FBD120E9188100EE61D9 /* Debug */,
+				2424FBD220E9188100EE61D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2424FBD420E9188100EE61D9 /* Build configuration list for PBXNativeTarget "SlowEat WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2424FBD520E9188100EE61D9 /* Debug */,
+				2424FBD620E9188100EE61D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2424FBD820E9188100EE61D9 /* Build configuration list for PBXNativeTarget "SlowEat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2424FBD920E9188100EE61D9 /* Debug */,
+				2424FBDA20E9188100EE61D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2424FBDB20E9188100EE61D9 /* Build configuration list for PBXNativeTarget "SlowEatTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2424FBDC20E9188100EE61D9 /* Debug */,
+				2424FBDD20E9188100EE61D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2424FBDE20E9188100EE61D9 /* Build configuration list for PBXNativeTarget "SlowEatUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2424FBDF20E9188100EE61D9 /* Debug */,
+				2424FBE020E9188100EE61D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2424FB7E20E9187E00EE61D9 /* Project object */;
+}
