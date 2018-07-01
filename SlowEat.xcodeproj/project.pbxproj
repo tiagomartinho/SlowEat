@@ -185,13 +185,9 @@
 		2424FB8820E9187F00EE61D9 /* SlowEat */ = {
 			isa = PBXGroup;
 			children = (
-				2424FB8920E9187F00EE61D9 /* AppDelegate.swift */,
 				2424FC1020E9421D00EE61D9 /* UIKitRouter.swift */,
 				2424FB8B20E9187F00EE61D9 /* ViewController.swift */,
-				2424FB8D20E9187F00EE61D9 /* Main.storyboard */,
-				2424FB9020E9188000EE61D9 /* Assets.xcassets */,
-				2424FB9220E9188000EE61D9 /* LaunchScreen.storyboard */,
-				2424FB9520E9188000EE61D9 /* Info.plist */,
+				2424FC1520E942F200EE61D9 /* Supporting Files */,
 			);
 			path = SlowEat;
 			sourceTree = "<group>";
@@ -262,6 +258,18 @@
 				2424FBF120E92DF000EE61D9 /* FoundationTimeProvider.swift */,
 			);
 			path = "Time Provider";
+			sourceTree = "<group>";
+		};
+		2424FC1520E942F200EE61D9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2424FB8920E9187F00EE61D9 /* AppDelegate.swift */,
+				2424FB8D20E9187F00EE61D9 /* Main.storyboard */,
+				2424FB9020E9188000EE61D9 /* Assets.xcassets */,
+				2424FB9220E9188000EE61D9 /* LaunchScreen.storyboard */,
+				2424FB9520E9188000EE61D9 /* Info.plist */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -723,7 +731,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4C34FT6ABU;
-				INFOPLIST_FILE = SlowEat/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/SlowEat/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -741,7 +749,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4C34FT6ABU;
-				INFOPLIST_FILE = SlowEat/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/SlowEat/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
