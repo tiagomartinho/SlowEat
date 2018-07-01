@@ -2,11 +2,19 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    let presenter = MealPresenter(timeProvider: FoundationTimeProvider(),
-                                  repository: CDMealRepository { })
+    var repository: CDMealRepository?
+    var presenter: MealPresenter? {
+        didSet {
+            repository?.fecth().forEach { print($0) }
+        }
+    }
 
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        presenter.track()
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        repository = CDMealRepository { [weak self] in
+            guard let vc = self, let repository = vc.repository else { return }
+            vc.presenter = MealPresenter(timeProvider: FoundationTimeProvider(),
+                                            repository: repository)
+        }
     }
 }

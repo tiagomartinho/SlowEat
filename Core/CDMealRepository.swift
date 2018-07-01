@@ -39,4 +39,14 @@ class CDMealRepository: MealRepository {
             fatalError("Failure to save context: \(error)")
         }
     }
+
+    func fecth() -> [Meal] {
+        let fetch = NSFetchRequest<NSFetchRequestResult>(entityName: "Meal")
+        do {
+            guard let meals = try managedObjectContext.fetch(fetch) as? [MealMO] else { return [] }
+            return meals.compactMap { $0.startTime?.timeIntervalSince1970 }.compactMap { Meal(startTime: $0) }
+        } catch {
+            fatalError("Failed to fetch: \(error)")
+        }
+    }
 }
