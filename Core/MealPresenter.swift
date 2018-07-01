@@ -1,7 +1,7 @@
 class MealPresenter {
 
-    let timeProvider: TimeProvider
-    let repository: MealRepository
+    private let timeProvider: TimeProvider
+    private let repository: MealRepository
 
     init(timeProvider: TimeProvider,
          repository: MealRepository) {

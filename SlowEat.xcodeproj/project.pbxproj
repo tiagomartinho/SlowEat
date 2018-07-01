@@ -249,14 +249,30 @@
 			isa = PBXGroup;
 			children = (
 				2424FBE220E919DC00EE61D9 /* MealPresenter.swift */,
-				2424FBE520E91A2000EE61D9 /* MealRepository.swift */,
 				2424FBE820E91A4100EE61D9 /* Meal.swift */,
-				2424FBEF20E92D9E00EE61D9 /* TimeProvider.swift */,
-				2424FBF120E92DF000EE61D9 /* FoundationTimeProvider.swift */,
+				2424FC0620E93F1500EE61D9 /* Time Provider */,
+				2424FC0520E93F0500EE61D9 /* Meal Repository */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		2424FC0520E93F0500EE61D9 /* Meal Repository */ = {
+			isa = PBXGroup;
+			children = (
+				2424FBE520E91A2000EE61D9 /* MealRepository.swift */,
 				2424FBFC20E9333600EE61D9 /* MealModel.xcdatamodeld */,
 				2424FC0020E933C100EE61D9 /* CDMealRepository.swift */,
 			);
-			path = Core;
+			path = "Meal Repository";
+			sourceTree = "<group>";
+		};
+		2424FC0620E93F1500EE61D9 /* Time Provider */ = {
+			isa = PBXGroup;
+			children = (
+				2424FBEF20E92D9E00EE61D9 /* TimeProvider.swift */,
+				2424FBF120E92DF000EE61D9 /* FoundationTimeProvider.swift */,
+			);
+			path = "Time Provider";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
