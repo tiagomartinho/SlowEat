@@ -12,7 +12,7 @@
 		2424FB8F20E9187F00EE61D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2424FB8D20E9187F00EE61D9 /* Main.storyboard */; };
 		2424FB9120E9188000EE61D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2424FB9020E9188000EE61D9 /* Assets.xcassets */; };
 		2424FB9420E9188000EE61D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2424FB9220E9188000EE61D9 /* LaunchScreen.storyboard */; };
-		2424FB9F20E9188000EE61D9 /* MealUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2424FB9E20E9188000EE61D9 /* MealUseCaseTests.swift */; };
+		2424FB9F20E9188000EE61D9 /* MealPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2424FB9E20E9188000EE61D9 /* MealPresenterTest.swift */; };
 		2424FBAA20E9188000EE61D9 /* SlowEatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2424FBA920E9188000EE61D9 /* SlowEatUITests.swift */; };
 		2424FBAF20E9188000EE61D9 /* SlowEat WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 2424FBAE20E9188000EE61D9 /* SlowEat WatchKit App.app */; };
 		2424FBB520E9188000EE61D9 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2424FBB320E9188000EE61D9 /* Interface.storyboard */; };
@@ -23,12 +23,16 @@
 		2424FBC720E9188000EE61D9 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2424FBC620E9188000EE61D9 /* NotificationController.swift */; };
 		2424FBC920E9188000EE61D9 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2424FBC820E9188000EE61D9 /* ComplicationController.swift */; };
 		2424FBCB20E9188100EE61D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2424FBCA20E9188100EE61D9 /* Assets.xcassets */; };
-		2424FBE320E919DC00EE61D9 /* MealUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2424FBE220E919DC00EE61D9 /* MealUseCase.swift */; };
-		2424FBE420E919DC00EE61D9 /* MealUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2424FBE220E919DC00EE61D9 /* MealUseCase.swift */; };
+		2424FBE320E919DC00EE61D9 /* MealPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2424FBE220E919DC00EE61D9 /* MealPresenter.swift */; };
+		2424FBE420E919DC00EE61D9 /* MealPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2424FBE220E919DC00EE61D9 /* MealPresenter.swift */; };
 		2424FBE620E91A2000EE61D9 /* MealRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2424FBE520E91A2000EE61D9 /* MealRepository.swift */; };
 		2424FBE720E91A2000EE61D9 /* MealRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2424FBE520E91A2000EE61D9 /* MealRepository.swift */; };
 		2424FBE920E91A4100EE61D9 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2424FBE820E91A4100EE61D9 /* Meal.swift */; };
 		2424FBEA20E91A4100EE61D9 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2424FBE820E91A4100EE61D9 /* Meal.swift */; };
+		2424FBF020E92D9E00EE61D9 /* TimeProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2424FBEF20E92D9E00EE61D9 /* TimeProvider.swift */; };
+		2424FBF220E92DF000EE61D9 /* FoundationTimeProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2424FBF120E92DF000EE61D9 /* FoundationTimeProvider.swift */; };
+		2424FBF320E92E6A00EE61D9 /* TimeProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2424FBEF20E92D9E00EE61D9 /* TimeProvider.swift */; };
+		2424FBF420E92E6A00EE61D9 /* FoundationTimeProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2424FBF120E92DF000EE61D9 /* FoundationTimeProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,7 +100,7 @@
 		2424FB9320E9188000EE61D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2424FB9520E9188000EE61D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2424FB9A20E9188000EE61D9 /* SlowEatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SlowEatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2424FB9E20E9188000EE61D9 /* MealUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealUseCaseTests.swift; sourceTree = "<group>"; };
+		2424FB9E20E9188000EE61D9 /* MealPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealPresenterTest.swift; sourceTree = "<group>"; };
 		2424FBA020E9188000EE61D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2424FBA520E9188000EE61D9 /* SlowEatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SlowEatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2424FBA920E9188000EE61D9 /* SlowEatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlowEatUITests.swift; sourceTree = "<group>"; };
@@ -113,9 +117,11 @@
 		2424FBCA20E9188100EE61D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2424FBCC20E9188100EE61D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2424FBCD20E9188100EE61D9 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
-		2424FBE220E919DC00EE61D9 /* MealUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealUseCase.swift; sourceTree = "<group>"; };
+		2424FBE220E919DC00EE61D9 /* MealPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealPresenter.swift; sourceTree = "<group>"; };
 		2424FBE520E91A2000EE61D9 /* MealRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealRepository.swift; sourceTree = "<group>"; };
 		2424FBE820E91A4100EE61D9 /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
+		2424FBEF20E92D9E00EE61D9 /* TimeProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeProvider.swift; sourceTree = "<group>"; };
+		2424FBF120E92DF000EE61D9 /* FoundationTimeProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoundationTimeProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,7 +197,7 @@
 		2424FB9D20E9188000EE61D9 /* SlowEatTests */ = {
 			isa = PBXGroup;
 			children = (
-				2424FB9E20E9188000EE61D9 /* MealUseCaseTests.swift */,
+				2424FB9E20E9188000EE61D9 /* MealPresenterTest.swift */,
 				2424FBA020E9188000EE61D9 /* Info.plist */,
 			);
 			path = SlowEatTests;
@@ -233,9 +239,11 @@
 		2424FBE120E9194700EE61D9 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				2424FBE220E919DC00EE61D9 /* MealUseCase.swift */,
+				2424FBE220E919DC00EE61D9 /* MealPresenter.swift */,
 				2424FBE520E91A2000EE61D9 /* MealRepository.swift */,
 				2424FBE820E91A4100EE61D9 /* Meal.swift */,
+				2424FBEF20E92D9E00EE61D9 /* TimeProvider.swift */,
+				2424FBF120E92DF000EE61D9 /* FoundationTimeProvider.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -436,7 +444,9 @@
 				2424FB8C20E9187F00EE61D9 /* ViewController.swift in Sources */,
 				2424FB8A20E9187F00EE61D9 /* AppDelegate.swift in Sources */,
 				2424FBE620E91A2000EE61D9 /* MealRepository.swift in Sources */,
-				2424FBE320E919DC00EE61D9 /* MealUseCase.swift in Sources */,
+				2424FBF220E92DF000EE61D9 /* FoundationTimeProvider.swift in Sources */,
+				2424FBF020E92D9E00EE61D9 /* TimeProvider.swift in Sources */,
+				2424FBE320E919DC00EE61D9 /* MealPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,7 +454,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2424FB9F20E9188000EE61D9 /* MealUseCaseTests.swift in Sources */,
+				2424FB9F20E9188000EE61D9 /* MealPresenterTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -464,9 +474,11 @@
 				2424FBC920E9188000EE61D9 /* ComplicationController.swift in Sources */,
 				2424FBEA20E91A4100EE61D9 /* Meal.swift in Sources */,
 				2424FBC520E9188000EE61D9 /* ExtensionDelegate.swift in Sources */,
-				2424FBE420E919DC00EE61D9 /* MealUseCase.swift in Sources */,
+				2424FBE420E919DC00EE61D9 /* MealPresenter.swift in Sources */,
 				2424FBE720E91A2000EE61D9 /* MealRepository.swift in Sources */,
 				2424FBC320E9188000EE61D9 /* InterfaceController.swift in Sources */,
+				2424FBF420E92E6A00EE61D9 /* FoundationTimeProvider.swift in Sources */,
+				2424FBF320E92E6A00EE61D9 /* TimeProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

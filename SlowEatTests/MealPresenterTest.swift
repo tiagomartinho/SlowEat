@@ -1,13 +1,14 @@
 import XCTest
 @testable import SlowEat
 
-class MealUseCaseTests: XCTestCase {
+class MealPresenterTest: XCTestCase {
 
     func testTrackMealSavesItInRepository() {
         let repository = SpyMealRepository()
-        let useCase = MealUseCase(repository: repository)
+        let presenter = MealPresenter(timeProvider: FoundationTimeProvider(),
+                                      repository: repository)
 
-        useCase.trackMeal()
+        presenter.track()
 
         XCTAssert(repository.saveWasCalled)
     }
