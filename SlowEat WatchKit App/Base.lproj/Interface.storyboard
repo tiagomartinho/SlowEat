@@ -9,10 +9,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14033"/>
     </dependencies>
     <scenes>
-        <!--Interface Controller-->
+        <!--Meal Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="SlowEat_WatchKit_App" customModuleProvider="target">
+                <controller id="AgC-eL-Hgc" customClass="MealInterfaceController" customModule="SlowEat_WatchKit_App" customModuleProvider="target">
                     <items>
                         <button width="1" height="179" alignment="left" title="Track Meal" id="IUp-Ir-kSH">
                             <connections>

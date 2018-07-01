@@ -1,7 +1,7 @@
 import WatchKit
 import Foundation
 
-class InterfaceController: WKInterfaceController {
+class MealInterfaceController: WKInterfaceController {
 
     var repository: CDMealRepository?
     var presenter: MealPresenter?

@@ -17,7 +17,7 @@
 		2424FBB520E9188000EE61D9 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2424FBB320E9188000EE61D9 /* Interface.storyboard */; };
 		2424FBB720E9188000EE61D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2424FBB620E9188000EE61D9 /* Assets.xcassets */; };
 		2424FBBE20E9188000EE61D9 /* SlowEat WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2424FBBD20E9188000EE61D9 /* SlowEat WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		2424FBC320E9188000EE61D9 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2424FBC220E9188000EE61D9 /* InterfaceController.swift */; };
+		2424FBC320E9188000EE61D9 /* MealInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2424FBC220E9188000EE61D9 /* MealInterfaceController.swift */; };
 		2424FBC520E9188000EE61D9 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2424FBC420E9188000EE61D9 /* ExtensionDelegate.swift */; };
 		2424FBC720E9188000EE61D9 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2424FBC620E9188000EE61D9 /* NotificationController.swift */; };
 		2424FBC920E9188000EE61D9 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2424FBC820E9188000EE61D9 /* ComplicationController.swift */; };
@@ -112,7 +112,7 @@
 		2424FBB620E9188000EE61D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2424FBB820E9188000EE61D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2424FBBD20E9188000EE61D9 /* SlowEat WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "SlowEat WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2424FBC220E9188000EE61D9 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		2424FBC220E9188000EE61D9 /* MealInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealInterfaceController.swift; sourceTree = "<group>"; };
 		2424FBC420E9188000EE61D9 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		2424FBC620E9188000EE61D9 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		2424FBC820E9188000EE61D9 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
@@ -216,7 +216,7 @@
 			isa = PBXGroup;
 			children = (
 				2424FC0E20E941E000EE61D9 /* WKRouter.swift */,
-				2424FBC220E9188000EE61D9 /* InterfaceController.swift */,
+				2424FBC220E9188000EE61D9 /* MealInterfaceController.swift */,
 				2424FBC420E9188000EE61D9 /* ExtensionDelegate.swift */,
 				2424FBC620E9188000EE61D9 /* NotificationController.swift */,
 				2424FBC820E9188000EE61D9 /* ComplicationController.swift */,
@@ -475,7 +475,7 @@
 				2424FBE720E91A2000EE61D9 /* MealRepository.swift in Sources */,
 				2424FC0F20E941E000EE61D9 /* WKRouter.swift in Sources */,
 				2424FBFF20E9333600EE61D9 /* MealModel.xcdatamodeld in Sources */,
-				2424FBC320E9188000EE61D9 /* InterfaceController.swift in Sources */,
+				2424FBC320E9188000EE61D9 /* MealInterfaceController.swift in Sources */,
 				2424FBF420E92E6A00EE61D9 /* FoundationTimeProvider.swift in Sources */,
 				2424FBF320E92E6A00EE61D9 /* TimeProvider.swift in Sources */,
 			);
