@@ -7,6 +7,10 @@ class MealController: WKInterfaceController {
 
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
+        initPresenter()
+    }
+
+    private func initPresenter() {
         repository = CDMealRepository { [weak self] in
             guard let vc = self, let repository = vc.repository else { return }
             vc.presenter = MealPresenter(timeProvider: FoundationTimeProvider(),
