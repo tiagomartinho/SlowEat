@@ -4,6 +4,8 @@ class CDMealRepository: MealRepository {
 
     let managedObjectContext: NSManagedObjectContext
 
+    private var notificationObserver: NSObjectProtocol?
+
     init(completionClosure: @escaping () -> ()) {
         guard let modelURL = Bundle.main.url(forResource: "MealModel", withExtension:"momd") else {
             fatalError("Error loading model from bundle")
@@ -16,7 +18,7 @@ class CDMealRepository: MealRepository {
         managedObjectContext = NSManagedObjectContext(concurrencyType: .mainQueueConcurrencyType)
         managedObjectContext.persistentStoreCoordinator = psc
         let queue = DispatchQueue.global(qos: .background)
-        queue.async {
+        queue.async { [weak self] in
             guard let docURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).last else {
                 fatalError("Unable to resolve document directory")
             }
@@ -27,6 +29,19 @@ class CDMealRepository: MealRepository {
             } catch {
                 fatalError("Error migrating store: \(error)")
             }
+            guard let strongSelf = self else { return }
+            let name = NSNotification.Name.NSManagedObjectContextObjectsDidChange
+            strongSelf.notificationObserver = NotificationCenter.default.addObserver(forName: name,
+                                                                                     object: strongSelf.managedObjectContext,
+                                                                                     queue: nil) { notification in
+                print("Objects Changed")
+            }
+        }
+    }
+
+    deinit {
+        if let notificationObserver = notificationObserver {
+            NotificationCenter.default.removeObserver(notificationObserver)
         }
     }
 
