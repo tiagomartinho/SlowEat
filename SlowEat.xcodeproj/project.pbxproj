@@ -195,6 +195,7 @@
 		2424FB8820E9187F00EE61D9 /* SlowEat */ = {
 			isa = PBXGroup;
 			children = (
+				2424FB8920E9187F00EE61D9 /* AppDelegate.swift */,
 				2424FB8B20E9187F00EE61D9 /* ViewController.swift */,
 				2424FC1520E942F200EE61D9 /* Supporting Files */,
 			);
@@ -272,7 +273,6 @@
 		2424FC1520E942F200EE61D9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				2424FB8920E9187F00EE61D9 /* AppDelegate.swift */,
 				2424FB8D20E9187F00EE61D9 /* Main.storyboard */,
 				2424FB9020E9188000EE61D9 /* Assets.xcassets */,
 				2424FB9220E9188000EE61D9 /* LaunchScreen.storyboard */,
