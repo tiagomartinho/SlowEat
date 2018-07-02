@@ -2,8 +2,9 @@ import CoreData
 
 class CDMealRepository: MealRepository {
 
-    let managedObjectContext: NSManagedObjectContext
+    weak var delegate: MealRepositoryDelegate?
 
+    private let managedObjectContext: NSManagedObjectContext
     private var notificationObserver: NSObjectProtocol?
 
     init(completionClosure: @escaping () -> ()) {
@@ -34,7 +35,8 @@ class CDMealRepository: MealRepository {
             strongSelf.notificationObserver = NotificationCenter.default.addObserver(forName: name,
                                                                                      object: strongSelf.managedObjectContext,
                                                                                      queue: nil) { notification in
-                print("Objects Changed")
+                print("NSManagedObjectContextObjectsDidChange")
+                strongSelf.delegate?.objectsDidChange()
             }
         }
     }
