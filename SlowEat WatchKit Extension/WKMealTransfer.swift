@@ -5,7 +5,7 @@ class WKMealTransfer: NSObject, MealTransfer {
     private let session = WCSession.default
     private var isActive: Bool { return session.activationState == .activated }
     private var isSupported: Bool { return WCSession.isSupported() }
-    private var meal: Meal?
+    private var userInfo: [String: Any]?
 
     override init() {
         super.init()
@@ -16,21 +16,20 @@ class WKMealTransfer: NSObject, MealTransfer {
     }
 
     func transfer(meal: Meal) {
-        self.meal = meal
         transfer(userInfo: ["Meal": meal.data])
     }
 
     private func transfer(userInfo: [String: Any]) {
         guard isSupported else { return }
-        guard isActive else { return }
+        guard isActive else { self.userInfo = userInfo; return }
         session.transferUserInfo(userInfo)
-        meal = nil
+        self.userInfo = nil
     }
 }
 
 extension WKMealTransfer: WCSessionDelegate {
     func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
-        guard let meal = meal else { return }
-        transfer(userInfo: ["Meal": meal.data])
+        guard let userInfo = userInfo else { return }
+        transfer(userInfo: userInfo)
     }
 }
