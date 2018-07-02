@@ -21,6 +21,7 @@ class MealData: NSObject, NSCoding {
 }
 
 extension Meal {
+
     var data: Data {
         let mealData = MealData(meal: self)
         NSKeyedArchiver.setClassName("MealData", for: MealData.self)

@@ -2,6 +2,7 @@
 import XCTest
 
 class MealDataTest: XCTestCase {
+
     func testSerialization() {
         let meal = Meal(startTime: 123)
         let mealData = MealData(meal: meal)
