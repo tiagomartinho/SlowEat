@@ -229,12 +229,7 @@
 				2424FC0E20E941E000EE61D9 /* WKRouter.swift */,
 				2424FBC220E9188000EE61D9 /* MealController.swift */,
 				24EB9B1020E95503000B5A9F /* MealSummaryController.swift */,
-				2424FBC420E9188000EE61D9 /* ExtensionDelegate.swift */,
-				2424FBC620E9188000EE61D9 /* NotificationController.swift */,
-				2424FBC820E9188000EE61D9 /* ComplicationController.swift */,
-				2424FBCA20E9188100EE61D9 /* Assets.xcassets */,
-				2424FBCC20E9188100EE61D9 /* Info.plist */,
-				2424FBCD20E9188100EE61D9 /* PushNotificationPayload.apns */,
+				24BE6E0B20EA7CDE0028C277 /* Supporting Files */,
 			);
 			path = "SlowEat WatchKit Extension";
 			sourceTree = "<group>";
@@ -282,6 +277,19 @@
 				2424FB9020E9188000EE61D9 /* Assets.xcassets */,
 				2424FB9220E9188000EE61D9 /* LaunchScreen.storyboard */,
 				2424FB9520E9188000EE61D9 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		24BE6E0B20EA7CDE0028C277 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2424FBC420E9188000EE61D9 /* ExtensionDelegate.swift */,
+				2424FBC620E9188000EE61D9 /* NotificationController.swift */,
+				2424FBC820E9188000EE61D9 /* ComplicationController.swift */,
+				2424FBCA20E9188100EE61D9 /* Assets.xcassets */,
+				2424FBCC20E9188100EE61D9 /* Info.plist */,
+				2424FBCD20E9188100EE61D9 /* PushNotificationPayload.apns */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -669,7 +677,7 @@
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4C34FT6ABU;
-				INFOPLIST_FILE = "SlowEat WatchKit Extension/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/SlowEat WatchKit Extension/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -691,7 +699,7 @@
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4C34FT6ABU;
-				INFOPLIST_FILE = "SlowEat WatchKit Extension/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/SlowEat WatchKit Extension/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
