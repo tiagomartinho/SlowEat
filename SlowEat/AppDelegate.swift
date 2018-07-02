@@ -10,13 +10,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        initMealRepository()
+        setRootViewController()
+        return true
+    }
+
+    private func setRootViewController() {
+        window = UIWindow()
+        window?.rootViewController = ViewController()
+        window?.makeKeyAndVisible()
+    }
+
+    private func initMealRepository() {
         mealRepository = CDMealRepository {
             if WCSession.isSupported() {
                 WCSession.default.delegate = self
                 WCSession.default.activate()
             }
         }
-        return true
     }
 }
 
