@@ -27,7 +27,6 @@ extension AppDelegate: WCSessionDelegate {
 
     func session(_ session: WCSession, didReceiveUserInfo userInfo: [String : Any] = [:]) {
         guard let meal = Meal(any: userInfo["Meal"]) else { return }
-        print("didReceiveUserInfo")
         mealRepository?.save(meal)
     }
 }

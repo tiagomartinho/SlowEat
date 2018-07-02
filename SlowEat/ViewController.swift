@@ -7,7 +7,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         mealRepository = CDMealRepository {
-            self.mealRepository?.fecth().forEach { print($0) }
+            let meals = self.mealRepository?.fecth() ?? []
+            print("meals \(meals.count)")
+            meals.forEach { print($0) }
         }
         mealRepository?.delegate = self
     }
@@ -15,7 +17,8 @@ class ViewController: UIViewController {
 
 extension ViewController: MealRepositoryDelegate {
     func objectsDidChange() {
-        print("objectsDidChange")
-        mealRepository?.fecth().forEach { print($0) }
+        let meals = mealRepository?.fecth() ?? []
+        print("meals \(meals.count)")
+        meals.forEach { print($0) }
     }
 }

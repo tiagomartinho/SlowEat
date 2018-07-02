@@ -4,7 +4,9 @@ class CDMealRepository: MealRepository {
 
     weak var delegate: MealRepositoryDelegate?
 
-    private let managedObjectContext: NSManagedObjectContext
+    private static var sharedContext: NSManagedObjectContext?
+
+    private let context: NSManagedObjectContext
     private var notificationObserver: NSObjectProtocol?
 
     init(completionClosure: @escaping () -> ()) {
@@ -16,8 +18,13 @@ class CDMealRepository: MealRepository {
         }
 
         let psc = NSPersistentStoreCoordinator(managedObjectModel: mom)
-        managedObjectContext = NSManagedObjectContext(concurrencyType: .mainQueueConcurrencyType)
-        managedObjectContext.persistentStoreCoordinator = psc
+        if CDMealRepository.sharedContext != nil {
+            context = CDMealRepository.sharedContext!
+        } else {
+            context = NSManagedObjectContext(concurrencyType: .mainQueueConcurrencyType)
+            context.persistentStoreCoordinator = psc
+            CDMealRepository.sharedContext = context
+        }
         let queue = DispatchQueue.global(qos: .background)
         queue.async { [weak self] in
             guard let docURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).last else {
@@ -33,9 +40,8 @@ class CDMealRepository: MealRepository {
             guard let strongSelf = self else { return }
             let name = NSNotification.Name.NSManagedObjectContextObjectsDidChange
             strongSelf.notificationObserver = NotificationCenter.default.addObserver(forName: name,
-                                                                                     object: strongSelf.managedObjectContext,
+                                                                                     object: strongSelf.context,
                                                                                      queue: nil) { notification in
-                print("NSManagedObjectContextObjectsDidChange")
                 strongSelf.delegate?.objectsDidChange()
             }
         }
@@ -49,16 +55,16 @@ class CDMealRepository: MealRepository {
 
     func save(_ meal: Meal) {
         do {
-            let mealMO = NSEntityDescription.insertNewObject(forEntityName: "Meal", into: managedObjectContext) as? MealMO
+            let mealMO = NSEntityDescription.insertNewObject(forEntityName: "Meal", into: context) as? MealMO
             mealMO?.startTime = Date(timeIntervalSince1970: meal.startTime)
-            try managedObjectContext.save()
+            try context.save()
         } catch {
             fatalError("Failure to save context: \(error)")
         }
     }
 
     func deleteAll() {
-        fecthMO().forEach { managedObjectContext.delete($0) }
+        fecthMO().forEach { context.delete($0) }
     }
 
     func fecth() -> [Meal] {
@@ -68,7 +74,7 @@ class CDMealRepository: MealRepository {
     private func fecthMO() -> [MealMO] {
         let fetch = NSFetchRequest<NSFetchRequestResult>(entityName: "Meal")
         do {
-            guard let meals = try managedObjectContext.fetch(fetch) as? [MealMO] else { return [] }
+            guard let meals = try context.fetch(fetch) as? [MealMO] else { return [] }
             return meals
         } catch {
             fatalError("Failed to fetch: \(error)")
