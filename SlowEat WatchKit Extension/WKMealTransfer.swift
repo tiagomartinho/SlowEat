@@ -3,10 +3,8 @@ import WatchConnectivity
 class WKMealTransfer: NSObject, MealTransfer {
 
     private let session = WCSession.default
-
     private var isActive: Bool { return session.activationState == .activated }
     private var isSupported: Bool { return WCSession.isSupported() }
-
     private var meal: Meal?
 
     override init() {

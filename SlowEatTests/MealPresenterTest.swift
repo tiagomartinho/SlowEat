@@ -3,20 +3,20 @@ import XCTest
 
 class MealPresenterTest: XCTestCase {
 
-    let repository = SpyMealRepository()
+    let mealTransfer = SpyMealTransfer()
     let router = SpyRouter()
     var presenter: MealPresenter!
 
     override func setUp() {
         presenter = MealPresenter(timeProvider: FoundationTimeProvider(),
-                                      repository: repository,
+                                      mealTransfer: mealTransfer,
                                       router: router)
     }
 
-    func testTrackMealSavesItInRepository() {
+    func testTransferMealWhenTrack() {
         presenter.track()
 
-        XCTAssert(repository.saveWasCalled)
+        XCTAssertNotNil(mealTransfer.mealTransfered)
     }
 
     func testRouteToSummaryViewAfterTrack() {
@@ -25,16 +25,13 @@ class MealPresenterTest: XCTestCase {
         XCTAssert(router.routeToViewCalled)
     }
 
-    class SpyMealRepository: MealRepository {
+    class SpyMealTransfer: MealTransfer {
 
-        var saveWasCalled = false
+        var mealTransfered: Meal!
 
-        func save(_ meal: Meal) {
-            saveWasCalled = true
+        func transfer(meal: Meal) {
+            mealTransfered = meal
         }
-
-        func fecth() -> [Meal] { return [] }
-        func deleteAll() {}
     }
 
     class SpyRouter: Router {

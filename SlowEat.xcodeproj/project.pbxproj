@@ -42,14 +42,10 @@
 		2424FC0C20E9415500EE61D9 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2424FC0B20E9415500EE61D9 /* View.swift */; };
 		2424FC0D20E9415500EE61D9 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2424FC0B20E9415500EE61D9 /* View.swift */; };
 		2424FC0F20E941E000EE61D9 /* WKRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2424FC0E20E941E000EE61D9 /* WKRouter.swift */; };
-		2424FC1120E9421D00EE61D9 /* UIKitRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2424FC1020E9421D00EE61D9 /* UIKitRouter.swift */; };
 		2424FC1320E9427100EE61D9 /* MealSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2424FC1220E9427100EE61D9 /* MealSummaryView.swift */; };
 		2424FC1420E9427100EE61D9 /* MealSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2424FC1220E9427100EE61D9 /* MealSummaryView.swift */; };
 		24BE6E0A20EA76200028C277 /* MealDataTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BE6E0920EA76200028C277 /* MealDataTest.swift */; };
 		24EB9B1120E95503000B5A9F /* MealSummaryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24EB9B1020E95503000B5A9F /* MealSummaryController.swift */; };
-		24EB9B1320E95604000B5A9F /* MealSummaryPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24EB9B1220E95604000B5A9F /* MealSummaryPresenterTest.swift */; };
-		24EB9B1520E95643000B5A9F /* MealSummaryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24EB9B1420E95643000B5A9F /* MealSummaryPresenter.swift */; };
-		24EB9B1620E95643000B5A9F /* MealSummaryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24EB9B1420E95643000B5A9F /* MealSummaryPresenter.swift */; };
 		24EB9B1820E957DB000B5A9F /* MealTransfer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24EB9B1720E957DB000B5A9F /* MealTransfer.swift */; };
 		24EB9B1920E957DB000B5A9F /* MealTransfer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24EB9B1720E957DB000B5A9F /* MealTransfer.swift */; };
 		24EB9B1B20E95A07000B5A9F /* WKMealTransfer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24EB9B1A20E95A07000B5A9F /* WKMealTransfer.swift */; };
@@ -140,12 +136,9 @@
 		2424FC0720E9410700EE61D9 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		2424FC0B20E9415500EE61D9 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		2424FC0E20E941E000EE61D9 /* WKRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WKRouter.swift; sourceTree = "<group>"; };
-		2424FC1020E9421D00EE61D9 /* UIKitRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitRouter.swift; sourceTree = "<group>"; };
 		2424FC1220E9427100EE61D9 /* MealSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealSummaryView.swift; sourceTree = "<group>"; };
 		24BE6E0920EA76200028C277 /* MealDataTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealDataTest.swift; sourceTree = "<group>"; };
 		24EB9B1020E95503000B5A9F /* MealSummaryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealSummaryController.swift; sourceTree = "<group>"; };
-		24EB9B1220E95604000B5A9F /* MealSummaryPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealSummaryPresenterTest.swift; sourceTree = "<group>"; };
-		24EB9B1420E95643000B5A9F /* MealSummaryPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealSummaryPresenter.swift; sourceTree = "<group>"; };
 		24EB9B1720E957DB000B5A9F /* MealTransfer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealTransfer.swift; sourceTree = "<group>"; };
 		24EB9B1A20E95A07000B5A9F /* WKMealTransfer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WKMealTransfer.swift; sourceTree = "<group>"; };
 		24EB9B2020E95F4F000B5A9F /* MealData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealData.swift; sourceTree = "<group>"; };
@@ -202,7 +195,6 @@
 		2424FB8820E9187F00EE61D9 /* SlowEat */ = {
 			isa = PBXGroup;
 			children = (
-				2424FC1020E9421D00EE61D9 /* UIKitRouter.swift */,
 				2424FB8B20E9187F00EE61D9 /* ViewController.swift */,
 				2424FC1520E942F200EE61D9 /* Supporting Files */,
 			);
@@ -213,7 +205,6 @@
 			isa = PBXGroup;
 			children = (
 				2424FB9E20E9188000EE61D9 /* MealPresenterTest.swift */,
-				24EB9B1220E95604000B5A9F /* MealSummaryPresenterTest.swift */,
 				2424FC0320E93A4F00EE61D9 /* CDMealRepositoryTest.swift */,
 				24BE6E0920EA76200028C277 /* MealDataTest.swift */,
 				2424FBA020E9188000EE61D9 /* Info.plist */,
@@ -251,7 +242,6 @@
 		2424FBE120E9194700EE61D9 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				24EB9B1420E95643000B5A9F /* MealSummaryPresenter.swift */,
 				2424FC1220E9427100EE61D9 /* MealSummaryView.swift */,
 				2424FC0B20E9415500EE61D9 /* View.swift */,
 				2424FC0720E9410700EE61D9 /* Router.swift */,
@@ -462,10 +452,8 @@
 				2424FB8C20E9187F00EE61D9 /* ViewController.swift in Sources */,
 				24EB9B2120E95F4F000B5A9F /* MealData.swift in Sources */,
 				24EB9B1820E957DB000B5A9F /* MealTransfer.swift in Sources */,
-				24EB9B1520E95643000B5A9F /* MealSummaryPresenter.swift in Sources */,
 				2424FC0A20E9410E00EE61D9 /* Router.swift in Sources */,
 				2424FC1320E9427100EE61D9 /* MealSummaryView.swift in Sources */,
-				2424FC1120E9421D00EE61D9 /* UIKitRouter.swift in Sources */,
 				2424FC0120E933C100EE61D9 /* CDMealRepository.swift in Sources */,
 				2424FB8A20E9187F00EE61D9 /* AppDelegate.swift in Sources */,
 				2424FBE620E91A2000EE61D9 /* MealRepository.swift in Sources */,
@@ -484,7 +472,6 @@
 				2424FB9F20E9188000EE61D9 /* MealPresenterTest.swift in Sources */,
 				2424FC0420E93A4F00EE61D9 /* CDMealRepositoryTest.swift in Sources */,
 				24BE6E0A20EA76200028C277 /* MealDataTest.swift in Sources */,
-				24EB9B1320E95604000B5A9F /* MealSummaryPresenterTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -508,7 +495,6 @@
 				2424FC0F20E941E000EE61D9 /* WKRouter.swift in Sources */,
 				24EB9B1B20E95A07000B5A9F /* WKMealTransfer.swift in Sources */,
 				2424FBFF20E9333600EE61D9 /* MealModel.xcdatamodeld in Sources */,
-				24EB9B1620E95643000B5A9F /* MealSummaryPresenter.swift in Sources */,
 				2424FBC320E9188000EE61D9 /* MealController.swift in Sources */,
 				2424FBF420E92E6A00EE61D9 /* FoundationTimeProvider.swift in Sources */,
 				2424FBF320E92E6A00EE61D9 /* TimeProvider.swift in Sources */,

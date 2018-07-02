@@ -1,11 +1,3 @@
-//
-//  ExtensionDelegate.swift
-//  SlowEat WatchKit Extension
-//
-//  Created by Tiago Martinho on 1/7/18.
-//  Copyright © 2018 tm. All rights reserved.
-//
-
 import WatchKit
 
 class ExtensionDelegate: NSObject, WKExtensionDelegate {
@@ -46,5 +38,4 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate {
             }
         }
     }
-
 }

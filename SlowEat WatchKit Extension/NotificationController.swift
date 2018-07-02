@@ -1,22 +1,12 @@
-//
-//  NotificationController.swift
-//  SlowEat WatchKit Extension
-//
-//  Created by Tiago Martinho on 1/7/18.
-//  Copyright © 2018 tm. All rights reserved.
-//
-
 import WatchKit
 import Foundation
 import UserNotifications
-
 
 class NotificationController: WKUserNotificationInterfaceController {
 
     override init() {
         // Initialize variables here.
         super.init()
-        
         // Configure interface objects here.
     }
 

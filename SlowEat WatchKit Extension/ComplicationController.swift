@@ -1,13 +1,4 @@
-//
-//  ComplicationController.swift
-//  SlowEat WatchKit Extension
-//
-//  Created by Tiago Martinho on 1/7/18.
-//  Copyright © 2018 tm. All rights reserved.
-//
-
 import ClockKit
-
 
 class ComplicationController: NSObject, CLKComplicationDataSource {
     
@@ -52,5 +43,4 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
         // This method will be called once per supported complication, and the results will be cached
         handler(nil)
     }
-    
 }
