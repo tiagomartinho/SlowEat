@@ -20,7 +20,7 @@ class MealPresenter {
         view?.showTrackingView()
     }
 
-    func endMeal() {
+    func stopMeal() {
         let meal = Meal(startTime: timeTracker.startTime)
         mealTransfer.transfer(meal: meal)
         router.route(to: MealSummaryView())

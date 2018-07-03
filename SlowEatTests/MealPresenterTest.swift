@@ -16,13 +16,13 @@ class MealPresenterTest: XCTestCase {
     }
 
     func testTransferMealWhenMealEnds() {
-        presenter.endMeal()
+        presenter.stopMeal()
 
         XCTAssertNotNil(mealTransfer.mealTransfered)
     }
 
     func testRouteToSummaryViewWhenMealEnds() {
-        presenter.endMeal()
+        presenter.stopMeal()
 
         XCTAssert(router.routeToViewCalled)
     }

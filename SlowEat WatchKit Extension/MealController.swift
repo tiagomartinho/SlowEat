@@ -11,15 +11,24 @@ class MealController: WKInterfaceController {
 
     override func willActivate() {
         super.willActivate()
-        motivationLabel.setText(MotivationalQuotes.random)
+        motivationLabel?.setText(MotivationalQuotes.random)
     }
 
     @IBAction func startMeal() {
-        presenter.endMeal()
+        presenter.startMeal()
+    }
+
+    @IBAction func stopMeal() {
+        presenter.stopMeal()
     }
 }
 
 extension MealController: MealView {
     func showTrackingView() {
+        let controllers = ["TrackingView", "StopView"]
+        WKInterfaceController.reloadRootPageControllers(withNames: controllers,
+                                                        contexts: nil,
+                                                        orientation: .horizontal,
+                                                        pageIndex: 0)
     }
 }

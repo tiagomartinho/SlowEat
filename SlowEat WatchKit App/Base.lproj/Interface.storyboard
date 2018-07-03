@@ -71,10 +71,10 @@
             </objects>
             <point key="canvasLocation" x="468" y="643"/>
         </scene>
-        <!--SlowEat-->
+        <!--TrackingView-->
         <scene sceneID="UCk-CV-UCH">
             <objects>
-                <controller title="SlowEat" id="USe-a1-tbi">
+                <controller identifier="TrackingView" id="USe-a1-tbi" customClass="MealController" customModule="SlowEat_WatchKit_Extension">
                     <items>
                         <group width="1" alignment="left" verticalAlignment="center" layout="vertical" spacing="5" id="Xrv-0z-MVx">
                             <items>
@@ -117,16 +117,19 @@
             </objects>
             <point key="canvasLocation" x="516" y="345"/>
         </scene>
-        <!--Interface Controller-->
+        <!--StopView-->
         <scene sceneID="sec-4l-5rf">
             <objects>
-                <controller id="xOg-a2-keF">
+                <controller identifier="StopView" id="xOg-a2-keF" customClass="MealController" customModule="SlowEat_WatchKit_Extension">
                     <items>
                         <group width="1" height="1" alignment="left" layout="vertical" id="Hr3-BR-yY1">
                             <items>
                                 <button width="1" height="0.5" alignment="left" verticalAlignment="center" title="Stop" id="lX3-z3-qki">
                                     <color key="titleColor" red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="backgroundColor" red="0.19607843137254902" green="0.047058823529411764" blue="0.039215686274509803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <connections>
+                                        <action selector="stopMeal" destination="xOg-a2-keF" id="QDX-Jf-gAu"/>
+                                    </connections>
                                 </button>
                             </items>
                         </group>
