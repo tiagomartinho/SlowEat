@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		242042A920EBB0A700BBC7AB /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 242042A720EBB0A700BBC7AB /* Realm.framework */; };
+		242042AA20EBB0A700BBC7AB /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 242042A820EBB0A700BBC7AB /* RealmSwift.framework */; };
 		2424FB8A20E9187F00EE61D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2424FB8920E9187F00EE61D9 /* AppDelegate.swift */; };
 		2424FB8C20E9187F00EE61D9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2424FB8B20E9187F00EE61D9 /* ViewController.swift */; };
 		2424FB9120E9188000EE61D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2424FB9020E9188000EE61D9 /* Assets.xcassets */; };
@@ -103,6 +105,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		242042A720EBB0A700BBC7AB /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
+		242042A820EBB0A700BBC7AB /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
 		2424FB8620E9187F00EE61D9 /* SlowEat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlowEat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2424FB8920E9187F00EE61D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2424FB8B20E9187F00EE61D9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -152,6 +156,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				242042A920EBB0A700BBC7AB /* Realm.framework in Frameworks */,
+				242042AA20EBB0A700BBC7AB /* RealmSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,6 +178,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		242042A620EBB0A700BBC7AB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				242042A720EBB0A700BBC7AB /* Realm.framework */,
+				242042A820EBB0A700BBC7AB /* RealmSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		2424FB7D20E9187E00EE61D9 = {
 			isa = PBXGroup;
 			children = (
@@ -181,6 +196,7 @@
 				2424FBB220E9188000EE61D9 /* SlowEat WatchKit App */,
 				2424FBC120E9188000EE61D9 /* SlowEat WatchKit Extension */,
 				2424FB8720E9187F00EE61D9 /* Products */,
+				242042A620EBB0A700BBC7AB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -311,6 +327,7 @@
 				2424FB8320E9187F00EE61D9 /* Frameworks */,
 				2424FB8420E9187F00EE61D9 /* Resources */,
 				2424FBD720E9188100EE61D9 /* Embed Watch Content */,
+				242042AB20EBB0B600BBC7AB /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -455,6 +472,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		242042AB20EBB0B600BBC7AB /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/RealmSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Realm.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2424FB8220E9187F00EE61D9 /* Sources */ = {
@@ -757,6 +792,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4C34FT6ABU;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/SlowEat/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -775,6 +814,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4C34FT6ABU;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/SlowEat/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
