@@ -11,6 +11,12 @@
 		242042AA20EBB0A700BBC7AB /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 242042A820EBB0A700BBC7AB /* RealmSwift.framework */; };
 		242042AD20EBB28700BBC7AB /* RealmMealRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242042AC20EBB28700BBC7AB /* RealmMealRepository.swift */; };
 		242042AE20EBB73E00BBC7AB /* RealmMealRepositoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2424FC0320E93A4F00EE61D9 /* RealmMealRepositoryTest.swift */; };
+		242042B020EBC16800BBC7AB /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242042AF20EBC16800BBC7AB /* Timer.swift */; };
+		242042B120EBC16800BBC7AB /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242042AF20EBC16800BBC7AB /* Timer.swift */; };
+		242042B320EBC18200BBC7AB /* FoundationTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242042B220EBC18200BBC7AB /* FoundationTimer.swift */; };
+		242042B420EBC18200BBC7AB /* FoundationTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242042B220EBC18200BBC7AB /* FoundationTimer.swift */; };
+		242042B620EBC38900BBC7AB /* TimerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242042B520EBC38900BBC7AB /* TimerDelegate.swift */; };
+		242042B720EBC38900BBC7AB /* TimerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242042B520EBC38900BBC7AB /* TimerDelegate.swift */; };
 		2424FB8A20E9187F00EE61D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2424FB8920E9187F00EE61D9 /* AppDelegate.swift */; };
 		2424FB8C20E9187F00EE61D9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2424FB8B20E9187F00EE61D9 /* ViewController.swift */; };
 		2424FB9120E9188000EE61D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2424FB9020E9188000EE61D9 /* Assets.xcassets */; };
@@ -107,6 +113,9 @@
 		242042A720EBB0A700BBC7AB /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
 		242042A820EBB0A700BBC7AB /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
 		242042AC20EBB28700BBC7AB /* RealmMealRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmMealRepository.swift; sourceTree = "<group>"; };
+		242042AF20EBC16800BBC7AB /* Timer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
+		242042B220EBC18200BBC7AB /* FoundationTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoundationTimer.swift; sourceTree = "<group>"; };
+		242042B520EBC38900BBC7AB /* TimerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerDelegate.swift; sourceTree = "<group>"; };
 		2424FB8620E9187F00EE61D9 /* SlowEat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlowEat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2424FB8920E9187F00EE61D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2424FB8B20E9187F00EE61D9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -296,6 +305,9 @@
 				24A0E50A20EB531B003D5E0C /* TimeTracker.swift */,
 				24A0E50D20EB5390003D5E0C /* FoundationTimeTracker.swift */,
 				24A0E51920EB6848003D5E0C /* TimeFormatter.swift */,
+				242042AF20EBC16800BBC7AB /* Timer.swift */,
+				242042B220EBC18200BBC7AB /* FoundationTimer.swift */,
+				242042B520EBC38900BBC7AB /* TimerDelegate.swift */,
 			);
 			path = Time;
 			sourceTree = "<group>";
@@ -496,10 +508,13 @@
 				24A0E51F20EB6B39003D5E0C /* MealControlsView.swift in Sources */,
 				24A0E50E20EB5390003D5E0C /* FoundationTimeTracker.swift in Sources */,
 				2424FBE920E91A4100EE61D9 /* Meal.swift in Sources */,
+				242042B020EBC16800BBC7AB /* Timer.swift in Sources */,
 				2424FB8C20E9187F00EE61D9 /* ViewController.swift in Sources */,
 				242042AD20EBB28700BBC7AB /* RealmMealRepository.swift in Sources */,
 				24EB9B2120E95F4F000B5A9F /* MealData.swift in Sources */,
 				24EB9B1820E957DB000B5A9F /* MealTransfer.swift in Sources */,
+				242042B320EBC18200BBC7AB /* FoundationTimer.swift in Sources */,
+				242042B620EBC38900BBC7AB /* TimerDelegate.swift in Sources */,
 				24A0E51120EB55A9003D5E0C /* MealView.swift in Sources */,
 				24A0E50B20EB531B003D5E0C /* TimeTracker.swift in Sources */,
 				2424FB8A20E9187F00EE61D9 /* AppDelegate.swift in Sources */,
@@ -528,11 +543,13 @@
 				2424FBC720E9188000EE61D9 /* NotificationController.swift in Sources */,
 				24A0E51B20EB6848003D5E0C /* TimeFormatter.swift in Sources */,
 				2424FBC920E9188000EE61D9 /* ComplicationController.swift in Sources */,
+				242042B720EBC38900BBC7AB /* TimerDelegate.swift in Sources */,
 				24A0E50F20EB5390003D5E0C /* FoundationTimeTracker.swift in Sources */,
 				2424FBEA20E91A4100EE61D9 /* Meal.swift in Sources */,
 				24A0E51D20EB6A12003D5E0C /* ControlsController.swift in Sources */,
 				24EB9B1920E957DB000B5A9F /* MealTransfer.swift in Sources */,
 				24A0E50C20EB531B003D5E0C /* TimeTracker.swift in Sources */,
+				242042B120EBC16800BBC7AB /* Timer.swift in Sources */,
 				24EB9B2220E95F4F000B5A9F /* MealData.swift in Sources */,
 				2424FBC520E9188000EE61D9 /* ExtensionDelegate.swift in Sources */,
 				24A0E51420EB61AC003D5E0C /* InitialController.swift in Sources */,
@@ -540,6 +557,7 @@
 				2424FBE420E919DC00EE61D9 /* MealPresenter.swift in Sources */,
 				24A0E50720EB4EC0003D5E0C /* MotivationalQuotes.swift in Sources */,
 				24EB9B1B20E95A07000B5A9F /* WKMealTransfer.swift in Sources */,
+				242042B420EBC18200BBC7AB /* FoundationTimer.swift in Sources */,
 				24A0E52020EB6B39003D5E0C /* MealControlsView.swift in Sources */,
 				2424FBC320E9188000EE61D9 /* TrackingController.swift in Sources */,
 				24A0E51220EB55A9003D5E0C /* MealView.swift in Sources */,
