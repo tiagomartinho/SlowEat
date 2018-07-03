@@ -1,3 +1,2 @@
-- Remove repository from watch
-- watch records meal and sends it to the phone
-- watch app should be as simple as possible
+- Remove timer to update watch UI from Controller
+- Improve readibility of meal time metric
