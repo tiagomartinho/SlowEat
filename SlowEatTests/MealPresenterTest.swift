@@ -3,21 +3,16 @@ import XCTest
 
 class MealPresenterTest: XCTestCase {
 
-    let timeTracker = SpyTimeTracker()
-    let mealTransfer = SpyMealTransfer()
-    let router = SpyRouter()
-    var presenter: MealPresenter!
-
-    override func setUp() {
-        presenter = MealPresenter(timeTracker: timeTracker,
-                                      mealTransfer: mealTransfer,
-                                      router: router)
-    }
-
     func testStartTrackingTimeWhenMealStarts() {
         presenter.startMeal()
 
         XCTAssert(timeTracker.startCalled)
+    }
+
+    func testShowMealViewWhenMealStarts() {
+        presenter.startMeal()
+
+        XCTAssert(view.showTrackingViewCalled)
     }
 
     func testTransferMealWhenMealEnds() {
@@ -30,6 +25,30 @@ class MealPresenterTest: XCTestCase {
         presenter.endMeal()
 
         XCTAssert(router.routeToViewCalled)
+    }
+
+    // MARK: Test Support
+
+    let view = SpyMealView()
+    let timeTracker = SpyTimeTracker()
+    let mealTransfer = SpyMealTransfer()
+    let router = SpyRouter()
+    var presenter: MealPresenter!
+
+    override func setUp() {
+        presenter = MealPresenter(view: view,
+                                  timeTracker: timeTracker,
+                                  mealTransfer: mealTransfer,
+                                  router: router)
+    }
+
+    class SpyMealView: MealView {
+
+        var showTrackingViewCalled = false
+
+        func showTrackingView() {
+            showTrackingViewCalled = true
+        }
     }
 
     class SpyTimeTracker: TimeTracker {

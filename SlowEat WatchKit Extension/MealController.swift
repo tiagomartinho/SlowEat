@@ -2,7 +2,8 @@ import WatchKit
 
 class MealController: WKInterfaceController {
 
-    lazy var presenter = MealPresenter(timeTracker: FoundationTimeTracker(),
+    lazy var presenter = MealPresenter(view: self,
+                                       timeTracker: FoundationTimeTracker(),
                                   mealTransfer: WKMealTransfer(),
                                   router: WKRouter(controller: self))
 
@@ -15,5 +16,10 @@ class MealController: WKInterfaceController {
 
     @IBAction func startMeal() {
         presenter.endMeal()
+    }
+}
+
+extension MealController: MealView {
+    func showTrackingView() {
     }
 }
