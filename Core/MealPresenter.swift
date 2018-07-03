@@ -24,7 +24,8 @@ class MealPresenter {
     }
 
     func update() {
-        let time = TimeFormatter.format(timeTracker.currentTime)
-        trackingView?.showMealTime(time)
+        let time = timeTracker.currentTime - timeTracker.startTime
+        let timeFormatted = TimeFormatter.format(time)
+        trackingView?.showMealTime(timeFormatted)
     }
 }

@@ -17,13 +17,14 @@ class ViewController: UITableViewController {
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "UITableViewCell")
         mealRepository = RealmMealRepository()
         mealRepository?.delegate = self
+        objectsDidChange()
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "UITableViewCell")
         let meal = meals[indexPath.row]
         let duration = TimeFormatter.format(meal.endTime - meal.startTime)
-        cell?.textLabel?.text = "\(meal.startTime) -> \(meal.endTime) : \(duration)"
+        cell?.textLabel?.text = "\(duration)"
         return cell!
     }
 
