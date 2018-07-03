@@ -9,10 +9,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14033"/>
     </dependencies>
     <scenes>
-        <!--Initial Controller-->
+        <!--Meal Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InitialController" customModule="SlowEat_WatchKit_App" customModuleProvider="target">
+                <controller id="AgC-eL-Hgc" customClass="MealController" customModule="SlowEat_WatchKit_App" customModuleProvider="target">
                     <items>
                         <group width="1" height="1" alignment="left" layout="vertical" id="TZA-82-iVd">
                             <items>
@@ -20,7 +20,7 @@
                                     <color key="titleColor" red="0.015686274510000001" green="0.87058823529999996" blue="0.4431372549" alpha="1" colorSpace="calibratedRGB"/>
                                     <fontDescription key="font" type="system" weight="medium" pointSize="20"/>
                                     <connections>
-                                        <segue destination="USe-a1-tbi" kind="modal" id="et6-MY-GqE"/>
+                                        <action selector="startMeal" destination="AgC-eL-Hgc" id="gPw-kl-Pxn"/>
                                     </connections>
                                 </button>
                                 <label width="1" height="110" alignment="center" verticalAlignment="center" alpha="0.84999999999999998" text="Learning to eat slower is a simple yet powerful concept to improve your overall health" textAlignment="center" baselineAdjustment="alignCenters" numberOfLines="0" id="EJM-eT-HyU">
@@ -74,7 +74,7 @@
         <!--SlowEat-->
         <scene sceneID="UCk-CV-UCH">
             <objects>
-                <controller title="SlowEat" id="USe-a1-tbi" customClass="MealController" customModule="SlowEat_WatchKit_App" customModuleProvider="target">
+                <controller title="SlowEat" id="USe-a1-tbi">
                     <items>
                         <group width="1" alignment="left" verticalAlignment="center" layout="vertical" spacing="5" id="Xrv-0z-MVx">
                             <items>
