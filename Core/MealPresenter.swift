@@ -17,7 +17,8 @@ class MealPresenter {
     }
 
     func stopMeal() {
-        let meal = Meal(startTime: timeTracker.startTime, endTime: timeTracker.currentTime)
+        let meal = Meal(startTime: timeTracker.startTime,
+                        endTime: timeTracker.currentTime)
         mealTransfer.transfer(meal: meal)
         controlsView?.showSummaryView()
     }

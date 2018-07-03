@@ -21,7 +21,9 @@ class ViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "UITableViewCell")
-        cell?.textLabel?.text = "\(indexPath.row) \(meals[indexPath.row].startTime)"
+        let meal = meals[indexPath.row]
+        let duration = TimeFormatter.format(meal.endTime - meal.startTime)
+        cell?.textLabel?.text = "\(meal.startTime) -> \(meal.endTime) : \(duration)"
         return cell!
     }
 
