@@ -28,7 +28,7 @@ class TrackingController: WKInterfaceController {
 
 extension TrackingController: MealTrackingView {
     
-    func showMealTime(_ time: String) {
-        timeLabel?.setText(time)
+    func show(mealTime: String) {
+        timeLabel?.setText(mealTime)
     }
 }

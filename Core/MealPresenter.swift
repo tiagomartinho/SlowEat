@@ -40,6 +40,6 @@ extension MealPresenter: TimerDelegate {
     func tick() {
         let time = timeTracker.currentTime - timeTracker.startTime
         let timeFormatted = TimeFormatter.format(time)
-        trackingView?.showMealTime(timeFormatted)
+        trackingView?.show(mealTime: timeFormatted)
     }
 }

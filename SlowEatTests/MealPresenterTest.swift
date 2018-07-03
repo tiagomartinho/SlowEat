@@ -83,8 +83,8 @@ class MealPresenterTest: XCTestCase {
 
         var mealTime: String!
 
-        func showMealTime(_ time: String) {
-            mealTime = time
+        func show(mealTime: String) {
+            self.mealTime = mealTime
         }
     }
 

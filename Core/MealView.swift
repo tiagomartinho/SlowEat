@@ -1,3 +1,3 @@
 protocol MealTrackingView: class {
-    func showMealTime(_ time: String)
+    func show(mealTime: String)
 }
