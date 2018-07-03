@@ -6,11 +6,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
     
-    private var mealRepository: RealmMealRepository?
+    private let mealRepository = RealmMealRepository()
     
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        initMealRepository()
+        activateWatchSession()
         setRootViewController()
         return true
     }
@@ -22,8 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.makeKeyAndVisible()
     }
     
-    private func initMealRepository() {
-        mealRepository = RealmMealRepository()
+    private func activateWatchSession() {
         if WCSession.isSupported() {
             WCSession.default.delegate = self
             WCSession.default.activate()
@@ -38,6 +37,6 @@ extension AppDelegate: WCSessionDelegate {
     
     func session(_ session: WCSession, didReceiveUserInfo userInfo: [String : Any] = [:]) {
         guard let meal = Meal(any: userInfo["Meal"]) else { return }
-        mealRepository?.save(meal)
+        mealRepository.save(meal)
     }
 }
