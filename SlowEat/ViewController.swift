@@ -24,7 +24,10 @@ class ViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "UITableViewCell")
         let meal = meals[indexPath.row]
         let duration = TimeFormatter.format(meal.endTime - meal.startTime)
-        cell?.textLabel?.text = "\(duration)"
+        let date = Date(timeIntervalSince1970: meal.startTime)
+        let formatter = DateFormatter()
+        formatter.dateFormat = "MM/dd/yyyy HH:mm"
+        cell?.textLabel?.text = "\(formatter.string(from: date)) - \(duration)"
         return cell!
     }
 
