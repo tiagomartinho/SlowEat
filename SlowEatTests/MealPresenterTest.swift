@@ -23,6 +23,16 @@ class MealPresenterTest: XCTestCase {
         XCTAssertNotNil(mealTransfer.mealTransfered)
     }
 
+    func testTrackMealWithCorrectTime() {
+        timeTracker.startTime = 83
+        timeTracker.currentTime = 124
+
+        presenter.stopMeal()
+
+        XCTAssertEqual(83, mealTransfer.mealTransfered.startTime)
+        XCTAssertEqual(124, mealTransfer.mealTransfered.endTime)
+    }
+
     func testShowSummaryViewWhenMealStops() {
         presenter.stopMeal()
 
@@ -65,8 +75,7 @@ class MealPresenterTest: XCTestCase {
     class SpyTimeTracker: TimeTracker {
 
         var currentTime = 0.0
-
-        let startTime = 0.0
+        var startTime = 0.0
 
         var startCalled = false
 

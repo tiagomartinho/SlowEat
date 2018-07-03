@@ -10,7 +10,7 @@ class CDMealRepositoryTest: XCTestCase {
 
         repository = CDMealRepository {
             self.repository.deleteAll()
-            let meal = Meal(startTime: 123)
+            let meal = Meal(startTime: 123, endTime: 456)
 
             self.repository.save(meal)
 

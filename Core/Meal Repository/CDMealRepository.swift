@@ -68,7 +68,14 @@ class CDMealRepository: MealRepository {
     }
 
     func fecth() -> [Meal] {
-        return fecthMO().compactMap { $0.startTime?.timeIntervalSince1970 }.compactMap { Meal(startTime: $0) }
+        return fecthMO().compactMap { (mealMO) in
+            if let startTime = mealMO.startTime?.timeIntervalSince1970,
+                let endTime = mealMO.endTime?.timeIntervalSince1970 {
+                return Meal(startTime: startTime, endTime: endTime)
+            } else {
+                return nil
+            }
+        }
     }
 
     private func fecthMO() -> [MealMO] {

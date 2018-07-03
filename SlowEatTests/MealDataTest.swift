@@ -4,7 +4,7 @@ import XCTest
 class MealDataTest: XCTestCase {
 
     func testSerialization() {
-        let meal = Meal(startTime: 123)
+        let meal = Meal(startTime: 123, endTime: 456)
         let mealData = MealData(meal: meal)
         let data = NSKeyedArchiver.archivedData(withRootObject: mealData)
         let unarchiver = NSKeyedUnarchiver(forReadingWith: data)
@@ -13,7 +13,7 @@ class MealDataTest: XCTestCase {
     }
 
     func testMealSerialization() {
-        let meal = Meal(startTime: 123)
+        let meal = Meal(startTime: 123, endTime: 456)
         let otherMeal = Meal(any: meal.data)
         XCTAssertEqual(meal, otherMeal)
     }
