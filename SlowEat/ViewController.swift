@@ -2,7 +2,7 @@ import UIKit
 
 class ViewController: UITableViewController {
 
-    private var mealRepository: CDMealRepository?
+    private var mealRepository: RealmMealRepository?
     private var meals = [Meal]() {
         didSet {
             DispatchQueue.main.async {
@@ -15,7 +15,7 @@ class ViewController: UITableViewController {
         super.viewDidLoad()
         navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .trash, target: self, action: #selector(deleteMeals))
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "UITableViewCell")
-        mealRepository = CDMealRepository(completionClosure: objectsDidChange)
+        mealRepository = RealmMealRepository()
         mealRepository?.delegate = self
     }
 
@@ -36,6 +36,9 @@ class ViewController: UITableViewController {
 
 extension ViewController: MealRepositoryDelegate {
     func objectsDidChange() {
-        meals = mealRepository?.fecth() ?? []
+        mealRepository?.fecth { [weak self] meals in
+            guard let strongSelf = self else { return }
+            strongSelf.meals = meals
+        }
     }
 }
