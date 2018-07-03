@@ -1,14 +1,13 @@
 class MealPresenter {
 
-    weak var view: MealView?
-    
+    weak var trackingView: MealTrackingView?
+    weak var controlsView: MealControlsView?
+
     private let timeTracker: TimeTracker
     private let mealTransfer: MealTransfer
 
-    init(view: MealView? = nil,
-         timeTracker: TimeTracker,
+    init(timeTracker: TimeTracker,
          mealTransfer: MealTransfer) {
-        self.view = view
         self.timeTracker = timeTracker
         self.mealTransfer = mealTransfer
     }
@@ -20,6 +19,11 @@ class MealPresenter {
     func stopMeal() {
         let meal = Meal(startTime: timeTracker.startTime)
         mealTransfer.transfer(meal: meal)
-        view?.showSummaryView()
+        controlsView?.showSummaryView()
+    }
+
+    func update() {
+        let time = TimeFormatter.format(timeTracker.currentTime)
+        trackingView?.showMealTime(time)
     }
 }

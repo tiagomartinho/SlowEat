@@ -1,6 +1,6 @@
 import WatchKit
 
-class MealController: WKInterfaceController {
+class ControlsController: WKInterfaceController {
 
     private var presenter: MealPresenter?
 
@@ -9,8 +9,7 @@ class MealController: WKInterfaceController {
         if let presenter = context as? MealPresenter {
             self.presenter = presenter
         }
-        presenter?.view = self
-        presenter?.startMeal()
+        presenter?.controlsView = self
     }
 
     @IBAction func stopMeal() {
@@ -18,7 +17,7 @@ class MealController: WKInterfaceController {
     }
 }
 
-extension MealController: MealView {
+extension ControlsController: MealControlsView {
 
     func showSummaryView() {
         WKInterfaceController.reloadRootPageControllers(withNames: ["SummaryView"],

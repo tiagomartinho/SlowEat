@@ -9,6 +9,14 @@ class MealPresenterTest: XCTestCase {
         XCTAssert(timeTracker.startCalled)
     }
 
+    func testUpdateMealTime() {
+        timeTracker.currentTime = 83
+
+        presenter.update()
+
+        XCTAssertEqual("01:23", trackingView.mealTime)
+    }
+
     func testTransferMealWhenMealStops() {
         presenter.stopMeal()
 
@@ -18,23 +26,25 @@ class MealPresenterTest: XCTestCase {
     func testShowSummaryViewWhenMealStops() {
         presenter.stopMeal()
 
-        XCTAssert(view.showSummaryViewCalled)
+        XCTAssert(controlsView.showSummaryViewCalled)
     }
 
     // MARK: Test Support
 
-    let view = SpyMealView()
+    let controlsView = SpyMealControlsView()
+    let trackingView = SpyMealTrackingView()
     let timeTracker = SpyTimeTracker()
     let mealTransfer = SpyMealTransfer()
     var presenter: MealPresenter!
 
     override func setUp() {
-        presenter = MealPresenter(view: view,
-                                  timeTracker: timeTracker,
+        presenter = MealPresenter(timeTracker: timeTracker,
                                   mealTransfer: mealTransfer)
+        presenter.trackingView = trackingView
+        presenter.controlsView = controlsView
     }
 
-    class SpyMealView: MealView {
+    class SpyMealControlsView: MealControlsView {
 
         var showSummaryViewCalled = false
 
@@ -43,7 +53,18 @@ class MealPresenterTest: XCTestCase {
         }
     }
 
+    class SpyMealTrackingView: MealTrackingView {
+
+        var mealTime: String!
+
+        func showMealTime(_ time: String) {
+            mealTime = time
+        }
+    }
+
     class SpyTimeTracker: TimeTracker {
+
+        var currentTime = 0.0
 
         let startTime = 0.0
 

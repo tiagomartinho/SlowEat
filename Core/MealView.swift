@@ -1,3 +1,3 @@
-protocol MealView: class {
-    func showSummaryView()
+protocol MealTrackingView: class {
+    func showMealTime(_ time: String)
 }

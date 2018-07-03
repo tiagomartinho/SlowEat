@@ -85,7 +85,7 @@
         <!--TrackingView-->
         <scene sceneID="UCk-CV-UCH">
             <objects>
-                <controller identifier="TrackingView" id="USe-a1-tbi" customClass="MealController" customModule="SlowEat_WatchKit_App" customModuleProvider="target">
+                <controller identifier="TrackingView" id="USe-a1-tbi" customClass="TrackingController" customModule="SlowEat_WatchKit_App" customModuleProvider="target">
                     <items>
                         <group width="1" alignment="left" verticalAlignment="center" layout="vertical" spacing="5" id="Xrv-0z-MVx">
                             <items>
@@ -124,6 +124,9 @@
                             </items>
                         </group>
                     </items>
+                    <connections>
+                        <outlet property="timeLabel" destination="F6z-g2-8TG" id="cuM-pC-Zps"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="439" y="345"/>
@@ -131,7 +134,7 @@
         <!--StopView-->
         <scene sceneID="sec-4l-5rf">
             <objects>
-                <controller identifier="StopView" id="xOg-a2-keF" customClass="MealController" customModule="SlowEat_WatchKit_App" customModuleProvider="target">
+                <controller identifier="StopView" id="xOg-a2-keF" customClass="ControlsController" customModule="SlowEat_WatchKit_App" customModuleProvider="target">
                     <items>
                         <group width="1" height="1" alignment="left" layout="vertical" id="Hr3-BR-yY1">
                             <items>
