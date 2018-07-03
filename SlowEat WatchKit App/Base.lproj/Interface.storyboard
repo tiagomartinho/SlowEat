@@ -9,10 +9,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14033"/>
     </dependencies>
     <scenes>
-        <!--Meal Controller-->
+        <!--InitialView-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="MealController" customModule="SlowEat_WatchKit_App" customModuleProvider="target">
+                <controller identifier="InitialView" id="AgC-eL-Hgc" customClass="MealController" customModule="SlowEat_WatchKit_App" customModuleProvider="target">
                     <items>
                         <group width="1" height="1" alignment="left" layout="vertical" id="TZA-82-iVd">
                             <items>
@@ -37,16 +37,16 @@
             </objects>
             <point key="canvasLocation" x="220" y="345"/>
         </scene>
-        <!--MealSummaryView-->
+        <!--SummaryView-->
         <scene sceneID="7Ux-yb-Wak">
             <objects>
-                <controller identifier="MealSummaryView" id="Am2-jb-1Oa" customClass="MealSummaryController" customModule="SlowEat_WatchKit_App" customModuleProvider="target">
+                <controller identifier="SummaryView" id="Am2-jb-1Oa" customClass="MealController" customModule="SlowEat_WatchKit_App" customModuleProvider="target">
                     <items>
                         <label width="136" height="157" alignment="left" text="Meal Tracked!" id="Rou-AR-6EF"/>
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="997" y="345"/>
+            <point key="canvasLocation" x="885" y="345"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
@@ -74,7 +74,7 @@
         <!--TrackingView-->
         <scene sceneID="UCk-CV-UCH">
             <objects>
-                <controller identifier="TrackingView" id="USe-a1-tbi" customClass="MealController" customModule="SlowEat_WatchKit_Extension">
+                <controller identifier="TrackingView" id="USe-a1-tbi" customClass="MealController" customModule="SlowEat_WatchKit_App" customModuleProvider="target">
                     <items>
                         <group width="1" alignment="left" verticalAlignment="center" layout="vertical" spacing="5" id="Xrv-0z-MVx">
                             <items>
@@ -115,12 +115,12 @@
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="516" y="345"/>
+            <point key="canvasLocation" x="439" y="345"/>
         </scene>
         <!--StopView-->
         <scene sceneID="sec-4l-5rf">
             <objects>
-                <controller identifier="StopView" id="xOg-a2-keF" customClass="MealController" customModule="SlowEat_WatchKit_Extension">
+                <controller identifier="StopView" id="xOg-a2-keF" customClass="MealController" customModule="SlowEat_WatchKit_App" customModuleProvider="target">
                     <items>
                         <group width="1" height="1" alignment="left" layout="vertical" id="Hr3-BR-yY1">
                             <items>
@@ -136,7 +136,7 @@
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="717" y="345"/>
+            <point key="canvasLocation" x="631" y="345"/>
         </scene>
     </scenes>
 </document>

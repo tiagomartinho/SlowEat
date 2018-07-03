@@ -21,10 +21,10 @@ class MealPresenterTest: XCTestCase {
         XCTAssertNotNil(mealTransfer.mealTransfered)
     }
 
-    func testRouteToSummaryViewWhenMealEnds() {
+    func testShowSummaryViewWhenMealEnds() {
         presenter.stopMeal()
 
-        XCTAssert(router.routeToViewCalled)
+        XCTAssert(view.showSummaryViewCalled)
     }
 
     // MARK: Test Support
@@ -32,22 +32,30 @@ class MealPresenterTest: XCTestCase {
     let view = SpyMealView()
     let timeTracker = SpyTimeTracker()
     let mealTransfer = SpyMealTransfer()
-    let router = SpyRouter()
     var presenter: MealPresenter!
 
     override func setUp() {
         presenter = MealPresenter(view: view,
                                   timeTracker: timeTracker,
-                                  mealTransfer: mealTransfer,
-                                  router: router)
+                                  mealTransfer: mealTransfer)
     }
 
     class SpyMealView: MealView {
 
         var showTrackingViewCalled = false
+        var showInitialViewCalled = false
+        var showSummaryViewCalled = false
 
         func showTrackingView() {
             showTrackingViewCalled = true
+        }
+
+        func showInitialView() {
+            showInitialViewCalled = true
+        }
+
+        func showSummaryView() {
+            showSummaryViewCalled = true
         }
     }
 
@@ -68,15 +76,6 @@ class MealPresenterTest: XCTestCase {
 
         func transfer(meal: Meal) {
             mealTransfered = meal
-        }
-    }
-
-    class SpyRouter: Router {
-
-        var routeToViewCalled = false
-
-        func route(to view: View) {
-            routeToViewCalled = true
         }
     }
 }
