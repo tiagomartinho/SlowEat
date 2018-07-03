@@ -14,6 +14,6 @@ class MealController: WKInterfaceController {
     }
 
     @IBAction func startMeal() {
-        presenter.track()
+        presenter.endMeal()
     }
 }

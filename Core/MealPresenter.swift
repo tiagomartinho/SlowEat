@@ -12,7 +12,7 @@ class MealPresenter {
         self.router = router
     }
 
-    func track() {
+    func endMeal() {
         let meal = Meal(startTime: timeProvider.currentTime)
         mealTransfer.transfer(meal: meal)
         router.route(to: MealSummaryView())

@@ -13,14 +13,14 @@ class MealPresenterTest: XCTestCase {
                                       router: router)
     }
 
-    func testTransferMealWhenTrack() {
-        presenter.track()
+    func testTransferMealWhenMealEnds() {
+        presenter.endMeal()
 
         XCTAssertNotNil(mealTransfer.mealTransfered)
     }
 
-    func testRouteToSummaryViewAfterTrack() {
-        presenter.track()
+    func testRouteToSummaryViewWhenMealEnds() {
+        presenter.endMeal()
 
         XCTAssert(router.routeToViewCalled)
     }
