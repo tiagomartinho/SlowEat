@@ -40,6 +40,7 @@
 		2424FC0F20E941E000EE61D9 /* WKRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2424FC0E20E941E000EE61D9 /* WKRouter.swift */; };
 		2424FC1320E9427100EE61D9 /* MealSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2424FC1220E9427100EE61D9 /* MealSummaryView.swift */; };
 		2424FC1420E9427100EE61D9 /* MealSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2424FC1220E9427100EE61D9 /* MealSummaryView.swift */; };
+		24A0E50520EB482E003D5E0C /* InitialController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A0E50420EB482E003D5E0C /* InitialController.swift */; };
 		24BE6E0A20EA76200028C277 /* MealDataTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BE6E0920EA76200028C277 /* MealDataTest.swift */; };
 		24BE6E1020EA88430028C277 /* MealRepositoryDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BE6E0E20EA883E0028C277 /* MealRepositoryDelegate.swift */; };
 		24EB9B1120E95503000B5A9F /* MealSummaryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24EB9B1020E95503000B5A9F /* MealSummaryController.swift */; };
@@ -133,6 +134,7 @@
 		2424FC0B20E9415500EE61D9 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		2424FC0E20E941E000EE61D9 /* WKRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WKRouter.swift; sourceTree = "<group>"; };
 		2424FC1220E9427100EE61D9 /* MealSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealSummaryView.swift; sourceTree = "<group>"; };
+		24A0E50420EB482E003D5E0C /* InitialController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialController.swift; sourceTree = "<group>"; };
 		24BE6E0920EA76200028C277 /* MealDataTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealDataTest.swift; sourceTree = "<group>"; };
 		24BE6E0E20EA883E0028C277 /* MealRepositoryDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealRepositoryDelegate.swift; sourceTree = "<group>"; };
 		24EB9B1020E95503000B5A9F /* MealSummaryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealSummaryController.swift; sourceTree = "<group>"; };
@@ -225,6 +227,7 @@
 			children = (
 				24EB9B1A20E95A07000B5A9F /* WKMealTransfer.swift */,
 				2424FC0E20E941E000EE61D9 /* WKRouter.swift */,
+				24A0E50420EB482E003D5E0C /* InitialController.swift */,
 				2424FBC220E9188000EE61D9 /* MealController.swift */,
 				24EB9B1020E95503000B5A9F /* MealSummaryController.swift */,
 				24BE6E0B20EA7CDE0028C277 /* Supporting Files */,
@@ -486,6 +489,7 @@
 			files = (
 				2424FC0D20E9415500EE61D9 /* View.swift in Sources */,
 				2424FBC720E9188000EE61D9 /* NotificationController.swift in Sources */,
+				24A0E50520EB482E003D5E0C /* InitialController.swift in Sources */,
 				2424FBC920E9188000EE61D9 /* ComplicationController.swift in Sources */,
 				2424FBEA20E91A4100EE61D9 /* Meal.swift in Sources */,
 				24EB9B1920E957DB000B5A9F /* MealTransfer.swift in Sources */,
