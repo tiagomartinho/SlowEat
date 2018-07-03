@@ -12,7 +12,7 @@
         <!--InitialView-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller identifier="InitialView" id="AgC-eL-Hgc" customClass="MealController" customModule="SlowEat_WatchKit_App" customModuleProvider="target">
+                <controller identifier="InitialView" id="AgC-eL-Hgc" customClass="InitialController" customModule="SlowEat_WatchKit_App" customModuleProvider="target">
                     <items>
                         <group width="1" height="1" alignment="left" layout="vertical" id="TZA-82-iVd">
                             <items>
@@ -40,7 +40,7 @@
         <!--SummaryView-->
         <scene sceneID="7Ux-yb-Wak">
             <objects>
-                <controller identifier="SummaryView" id="Am2-jb-1Oa" customClass="MealController" customModule="SlowEat_WatchKit_App" customModuleProvider="target">
+                <controller identifier="SummaryView" id="Am2-jb-1Oa" customClass="SummaryController" customModule="SlowEat_WatchKit_App" customModuleProvider="target">
                     <items>
                         <group width="1" alignment="left" layout="vertical" id="hbU-by-LGQ">
                             <items>

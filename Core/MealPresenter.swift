@@ -1,10 +1,11 @@
 class MealPresenter {
 
-    private weak var view: MealView?
+    weak var view: MealView?
+    
     private let timeTracker: TimeTracker
     private let mealTransfer: MealTransfer
 
-    init(view: MealView,
+    init(view: MealView? = nil,
          timeTracker: TimeTracker,
          mealTransfer: MealTransfer) {
         self.view = view
@@ -14,16 +15,11 @@ class MealPresenter {
 
     func startMeal() {
         timeTracker.start()
-        view?.showTrackingView()
     }
 
     func stopMeal() {
         let meal = Meal(startTime: timeTracker.startTime)
         mealTransfer.transfer(meal: meal)
         view?.showSummaryView()
-    }
-
-    func endMeal() {
-        view?.showInitialView()
     }
 }

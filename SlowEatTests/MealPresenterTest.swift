@@ -9,12 +9,6 @@ class MealPresenterTest: XCTestCase {
         XCTAssert(timeTracker.startCalled)
     }
 
-    func testShowMealViewWhenMealStarts() {
-        presenter.startMeal()
-
-        XCTAssert(view.showTrackingViewCalled)
-    }
-
     func testTransferMealWhenMealStops() {
         presenter.stopMeal()
 
@@ -25,12 +19,6 @@ class MealPresenterTest: XCTestCase {
         presenter.stopMeal()
 
         XCTAssert(view.showSummaryViewCalled)
-    }
-
-    func testShowInitialViewWhenMealEnds() {
-        presenter.endMeal()
-
-        XCTAssert(view.showInitialViewCalled)
     }
 
     // MARK: Test Support
@@ -48,17 +36,7 @@ class MealPresenterTest: XCTestCase {
 
     class SpyMealView: MealView {
 
-        var showTrackingViewCalled = false
-        var showInitialViewCalled = false
         var showSummaryViewCalled = false
-
-        func showTrackingView() {
-            showTrackingViewCalled = true
-        }
-
-        func showInitialView() {
-            showInitialViewCalled = true
-        }
 
         func showSummaryView() {
             showSummaryViewCalled = true

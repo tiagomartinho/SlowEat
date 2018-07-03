@@ -2,46 +2,26 @@ import WatchKit
 
 class MealController: WKInterfaceController {
 
-    lazy var presenter = MealPresenter(view: self,
-                                       timeTracker: FoundationTimeTracker(),
-                                  mealTransfer: WKMealTransfer())
+    private var presenter: MealPresenter?
 
-    @IBOutlet var motivationLabel: WKInterfaceLabel!
-
-    override func willActivate() {
-        super.willActivate()
-        motivationLabel?.setText(MotivationalQuotes.random)
-    }
-
-    @IBAction func startMeal() {
-        presenter.startMeal()
+    override func awake(withContext context: Any?) {
+        super.awake(withContext: context)
+        if let presenter = context as? MealPresenter {
+            self.presenter = presenter
+        }
+        presenter?.view = self
+        presenter?.startMeal()
     }
 
     @IBAction func stopMeal() {
-        presenter.stopMeal()
-    }
-
-    @IBAction func endMeal() {
-        presenter.endMeal()
+        presenter?.stopMeal()
     }
 }
 
 extension MealController: MealView {
 
     func showSummaryView() {
-        reload(controllers: ["SummaryView"])
-    }
-    
-    func showInitialView() {
-        reload(controllers: ["InitialView"])
-    }
-
-    func showTrackingView() {
-        reload(controllers: ["TrackingView", "StopView"])
-    }
-
-    private func reload(controllers: [String]) {
-        WKInterfaceController.reloadRootPageControllers(withNames: controllers,
+        WKInterfaceController.reloadRootPageControllers(withNames: ["SummaryView"],
                                                         contexts: nil,
                                                         orientation: .horizontal,
                                                         pageIndex: 0)
