@@ -17,8 +17,8 @@
                         <group width="1" height="1" alignment="left" layout="vertical" id="TZA-82-iVd">
                             <items>
                                 <button width="1" alignment="center" verticalAlignment="bottom" title="Start meal" id="9QA-2o-nwn">
-                                    <color key="titleColor" red="0.015686274510000001" green="0.87058823529999996" blue="0.4431372549" alpha="1" colorSpace="calibratedRGB"/>
-                                    <fontDescription key="font" type="system" weight="medium" pointSize="20"/>
+                                    <color key="titleColor" red="0.2901960784" green="0.56470588239999997" blue="0.8862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
                                     <connections>
                                         <action selector="startMeal" destination="AgC-eL-Hgc" id="gPw-kl-Pxn"/>
                                     </connections>
@@ -42,7 +42,18 @@
             <objects>
                 <controller identifier="SummaryView" id="Am2-jb-1Oa" customClass="MealController" customModule="SlowEat_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <label width="136" height="157" alignment="left" text="Meal Tracked!" id="Rou-AR-6EF"/>
+                        <group width="1" alignment="left" layout="vertical" id="hbU-by-LGQ">
+                            <items>
+                                <label width="1" height="0.5" alignment="left" text="Meal Tracked!" id="Rou-AR-6EF"/>
+                                <button width="1" height="0.5" alignment="left" title="Done" id="AeW-ta-Ja0">
+                                    <color key="titleColor" red="0.2901960784" green="0.56470588239999997" blue="0.8862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                    <connections>
+                                        <action selector="endMeal" destination="Am2-jb-1Oa" id="rx5-Im-UH4"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
                     </items>
                 </controller>
             </objects>
@@ -127,6 +138,7 @@
                                 <button width="1" height="0.5" alignment="left" verticalAlignment="center" title="Stop" id="lX3-z3-qki">
                                     <color key="titleColor" red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="backgroundColor" red="0.19607843137254902" green="0.047058823529411764" blue="0.039215686274509803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
                                     <connections>
                                         <action selector="stopMeal" destination="xOg-a2-keF" id="QDX-Jf-gAu"/>
                                     </connections>

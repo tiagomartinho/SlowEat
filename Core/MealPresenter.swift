@@ -22,4 +22,8 @@ class MealPresenter {
         mealTransfer.transfer(meal: meal)
         view?.showSummaryView()
     }
+
+    func endMeal() {
+        view?.showInitialView()
+    }
 }

@@ -20,6 +20,10 @@ class MealController: WKInterfaceController {
     @IBAction func stopMeal() {
         presenter.stopMeal()
     }
+
+    @IBAction func endMeal() {
+        presenter.endMeal()
+    }
 }
 
 extension MealController: MealView {

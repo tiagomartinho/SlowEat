@@ -15,16 +15,22 @@ class MealPresenterTest: XCTestCase {
         XCTAssert(view.showTrackingViewCalled)
     }
 
-    func testTransferMealWhenMealEnds() {
+    func testTransferMealWhenMealStops() {
         presenter.stopMeal()
 
         XCTAssertNotNil(mealTransfer.mealTransfered)
     }
 
-    func testShowSummaryViewWhenMealEnds() {
+    func testShowSummaryViewWhenMealStops() {
         presenter.stopMeal()
 
         XCTAssert(view.showSummaryViewCalled)
+    }
+
+    func testShowInitialViewWhenMealEnds() {
+        presenter.endMeal()
+
+        XCTAssert(view.showInitialViewCalled)
     }
 
     // MARK: Test Support
