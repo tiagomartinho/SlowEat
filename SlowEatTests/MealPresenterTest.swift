@@ -3,14 +3,21 @@ import XCTest
 
 class MealPresenterTest: XCTestCase {
 
+    let timeTracker = SpyTimeTracker()
     let mealTransfer = SpyMealTransfer()
     let router = SpyRouter()
     var presenter: MealPresenter!
 
     override func setUp() {
-        presenter = MealPresenter(timeProvider: FoundationTimeProvider(),
+        presenter = MealPresenter(timeTracker: timeTracker,
                                       mealTransfer: mealTransfer,
                                       router: router)
+    }
+
+    func testStartTrackingTimeWhenMealStarts() {
+        presenter.startMeal()
+
+        XCTAssert(timeTracker.startCalled)
     }
 
     func testTransferMealWhenMealEnds() {
@@ -23,6 +30,17 @@ class MealPresenterTest: XCTestCase {
         presenter.endMeal()
 
         XCTAssert(router.routeToViewCalled)
+    }
+
+    class SpyTimeTracker: TimeTracker {
+
+        let startTime = 0.0
+
+        var startCalled = false
+
+        func start() {
+            startCalled = true
+        }
     }
 
     class SpyMealTransfer: MealTransfer {

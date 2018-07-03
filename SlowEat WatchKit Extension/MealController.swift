@@ -2,7 +2,7 @@ import WatchKit
 
 class MealController: WKInterfaceController {
 
-    lazy var presenter = MealPresenter(timeProvider: FoundationTimeProvider(),
+    lazy var presenter = MealPresenter(timeTracker: FoundationTimeTracker(),
                                   mealTransfer: WKMealTransfer(),
                                   router: WKRouter(controller: self))
 
